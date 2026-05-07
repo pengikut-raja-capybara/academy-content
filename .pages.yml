@@ -72,7 +72,6 @@ content:
           - name: id
             label: Lesson ID
             type: uuid
-            description: "Contoh: html-1"
           - name: title
             label: Title
             type: string
@@ -92,20 +91,16 @@ content:
           - name: description
             label: Description
             type: text
+          - name: content
+            label: Content
+            type: rich-text
 
           - name: video
             label: Video ID (YouTube)
             type: string
-          - name: duration
-            label: Duration (Mins)
-            type: number
           - name: minWatchPercentage
             label: Min. Watch (%)
             type: number
-
-          - name: content
-            label: Content
-            type: rich-text
 
           - name: minScorePercentage
             label: Min. Score (%)
@@ -118,7 +113,7 @@ content:
                 label: Type
                 type: select
                 options: 
-                  values: [quiz, code]
+                  values: [quiz]
               - name: questions
                 label: Questions
                 type: object
@@ -130,9 +125,7 @@ content:
                   - name: question
                     label: Question
                     type: text
-                  
-                  # KUNCI PERBAIKAN: Di Pages CMS tidak ada 'type: list'. 
-                  # Gunakan type: string dengan tambahan list: true
+  
                   - name: options
                     label: Options
                     type: string
@@ -142,11 +135,11 @@ content:
                   - name: correctAnswer
                     label: Correct Answer Index
                     type: number
+                    
                   - name: explanation
                     label: Explanation
                     type: text
 
-          # KUNCI PERBAIKAN SAMA: Gunakan type: string dan list: true
           - name: checklist
             label: Checklist
             type: string
