@@ -10,7 +10,7 @@
       # ==========================================
       - name: id
         label: 🔑 Module ID
-        type: string # PERBAIKAN: Pages CMS tidak punya type 'uuid', gunakan 'string'
+        type: string
         description: "Format unik, contoh: mod-html"
       - name: slug
         label: 🔗 Slug URL
@@ -31,7 +31,7 @@
       - name: submissionUrl
         label: 🎯 [TUGAS AKHIR] Link Pengumpulan Form
         type: string
-        description: "Kosongkan jika tidak ada tugas akhir. Contoh: https://forms.google..."
+        description: "Kosongkan jika tidak ada tugas akhir."
       - name: submissionDescription
         label: 🎯 [TUGAS AKHIR] Instruksi Pengerjaan
         type: rich-text
@@ -45,7 +45,7 @@
             type: string
           - name: file
             label: 📤 Upload File Baru
-            type: file 
+            type: file
           - name: url
             label: 🔗 Link URL Eksternal
             type: string
@@ -65,7 +65,7 @@
         fields:
           - name: id
             label: 🔑 Lesson ID
-            type: string # PERBAIKAN: Pages CMS tidak punya type 'uuid', gunakan 'string'
+            type: string
             description: "Contoh: html-1"
           - name: slug
             label: 🔗 Slug Lesson
@@ -76,7 +76,7 @@
             type: string
             required: true
           - name: type
-            label: 🔀 TIPE MATERI (PENTING)
+            label: 🔀 TIPE MATERI
             type: select
             required: true
             options:
@@ -90,29 +90,23 @@
             label: 📝 Deskripsi Singkat Materi
             type: text
 
-          # --- BAGIAN KHUSUS VIDEO ---
           - name: video
             label: "▶️ [KHUSUS VIDEO] YouTube ID"
             type: string
-            description: "Contoh: NBZ9Ro6UKV8"
           - name: duration
             label: "⏳ Estimasi Durasi (Menit)"
             type: number
           - name: minWatchPercentage
             label: "📈 Syarat Tontonan Lulus (%)"
             type: number
-            description: "Biarkan kosong untuk default 90%"
 
-          # --- BAGIAN KHUSUS TEKS/ARTIKEL ---
           - name: content
             label: "📄 [KHUSUS TEKS] Isi Materi Artikel"
             type: rich-text
 
-          # --- BAGIAN KHUSUS KUIS/EVALUASI ---
           - name: minScorePercentage
             label: "💯 [KHUSUS KUIS] Syarat Nilai Kelulusan (%)"
             type: number
-            description: "Default: 80"
           - name: exercise
             label: "📝 [KHUSUS KUIS] Pengaturan Pertanyaan"
             type: object
@@ -128,41 +122,36 @@
                 fields:
                   - name: id
                     label: ID Pertanyaan
-                    type: string # PERBAIKAN: Gunakan 'string'
+                    type: string
                   - name: question
                     label: Soal Pertanyaan
                     type: text
                   
-                  # PERBAIKAN FATAL: Di Pages CMS, array string sederhana menggunakan type: string + list: true
+                  # Kumpulan string menggunakan type: string + list: true
                   - name: options
                     label: Pilihan Jawaban (A, B, C, D)
                     type: string
                     list: true
-                    description: "Tambahkan teks pilihan jawaban secara berurutan"
-
+                    
                   - name: correctAnswer
-                    label: Indeks Jawaban Benar
+                    label: Indeks Jawaban Benar (0, 1, 2, dst)
                     type: number
-                    description: "0 = Opsi 1, 1 = Opsi 2, dst"
                   - name: explanation
                     label: Penjelasan Jawaban (Opsional)
                     type: text
 
-          # --- TUGAS CODE ---
+          # DIGANTI: type 'code' diubah menjadi 'text' agar tidak crash di Pages CMS
           - name: initialCode
             label: "💻 [Tugas Code] Kode Awal (Starter)"
-            type: code # Pastikan versi Pages CMS kamu mendukung type 'code', jika masih error ubah ke 'text'
+            type: text 
           - name: solution
             label: "💻 [Tugas Code] Kode Solusi"
-            type: code
+            type: text
 
-          # --- BAGIAN UMUM ---
-          # PERBAIKAN FATAL: Array string menggunakan type: string + list: true
           - name: checklist
             label: "✅ To-Do List (Tugas Praktik)"
             type: string
             list: true
-            description: "Daftar checklist yang harus dicentang user"
 
           - name: attachments
             label: 📎 File Lampiran Materi Tambahan
