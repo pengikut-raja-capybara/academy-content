@@ -82,12 +82,13 @@ content:
             type: select
             required: true
             options:
-              - label: "▶️ Video Pembelajaran"
-                value: "video"
-              - label: "📄 Teks / Artikel"
-                value: "text"
-              - label: "📝 Evaluasi / Kuis"
-                value: "exercise"
+              values: # <-- WAJIB DITAMBAHKAN
+                - name: "video" # <-- Ganti 'value' menjadi 'name'
+                  label: "▶️ Video Pembelajaran"
+                - name: "text"
+                  label: "📄 Teks / Artikel"
+                - name: "exercise"
+                  label: "📝 Evaluasi / Kuis"
           - name: description
             label: 📝 Deskripsi Singkat Materi
             type: text
