@@ -39,7 +39,8 @@ content:
         type: rich-text
       - name: submissionAttachments
         label: 🎯 [TUGAS AKHIR] File Lampiran (Template/Soal)
-        type: list
+        type: object
+        list: true
         fields:
           - name: title
             label: Nama File
@@ -57,7 +58,8 @@ content:
       # ==========================================
       - name: lessons
         label: 📖 Daftar Pelajaran (Lessons)
-        type: list
+        type: object
+        list: true
         fields:
           - name: id
             label: 🔑 Lesson ID
@@ -121,7 +123,8 @@ content:
                 options: [quiz, code]
               - name: questions
                 label: Daftar Pertanyaan Kuis
-                type: list
+                type: object
+                list: true
                 fields:
                   - name: id
                     label: ID Pertanyaan (Otomatis)
@@ -160,8 +163,9 @@ content:
             description: "Daftar checklist yang harus dicentang user"
 
           - name: attachments
-            label: "📎 File Lampiran Materi Tambahan"
-            type: list
+            label: 📎 File Lampiran Materi Tambahan
+            type: object
+            list: true
             fields:
               - name: title
                 label: Nama File
