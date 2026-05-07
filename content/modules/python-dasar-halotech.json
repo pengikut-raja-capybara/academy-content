@@ -1,303 +1,303 @@
 {
-    "id": "2738d2f5-4f7a-4c8a-9d62-8279b5a2ede2",
-    "slug": "python-dasar-halotech",
-    "title": "🐍 Belajar Python Bahasa Indonesia - HaloTech",
-    "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: HaloTech Academy",
-    "submissionUrl": "https://forms.gle/e23ZghDPDnjjiNFx9",
-    "submissionDescription": "Tugas Akhir Modul Python Dasar:\nBuatlah sebuah program Python sederhana (file .py) yang menerapkan ketentuan berikut:\n• Menggunakan minimal 3 tipe data berbeda (String, Integer, Float/Boolean).\n• Terdapat implementasi Operator Aritmatika untuk perhitungan.\n• Terdapat implementasi Operator Logika atau Perbandingan.\n• Menggunakan komentar untuk menjelaskan alur kode.\n• Program harus menerima input dari user dan menampilkan output yang diformat.\n\nKumpulkan dalam format .zip atau link GitHub.",
-    "lessons": [
-        {
-            "id": "a1c2d3e4-b5f6-4a5b-8c9d-0e1f2a3b4c5d",
-            "title": "Persiapan Belajar Python",
-            "type": "text",
-            "description": "Mengenal ekosistem Python sebelum mulai coding.",
-            "content": "Python adalah bahasa pemrograman yang populer karena sintaksnya yang menyerupai bahasa manusia. Sebelum memulai, pastikan Anda sudah menginstal Python di komputer Anda dan menyiapkan editor seperti VS Code atau PyCharm.",
-            "checklist": [
-                "Instal Python terbaru",
-                "Siapkan Code Editor",
-                "Pahami kegunaan Python di era AI"
-            ]
-        },
-        {
-            "id": "b02ca4aa-1398-4887-aa92-6f26c3cd8519",
-            "title": "Langkah Pertama Belajar Pemrograman (0/12)",
-            "type": "video",
-            "video": "-DGFFxblTUw",
-            "description": "Panduan awal memulai perjalanan koding Anda.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f",
-            "title": "Variabel: Wadah Penyimpan Data (1/12)",
-            "type": "video",
-            "video": "OFYXe6qoYok",
-            "description": "Memahami cara menyimpan data ke dalam variabel.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "d1e2f3g4-h5i6-4a7b-8c9d-0e1f2a3b4c5d",
-            "title": "Kuis 1: Dasar Variabel",
-            "type": "exercise",
-            "exercise": {
-                "type": "quiz",
-                "questions": [
-                    {
-                        "id": "py-q1-1",
-                        "question": "Manakah penulisan variabel yang valid di Python?",
-                        "options": [
-                            "1nama = 'Angga'",
-                            "nama_user = 'Angga'",
-                            "nama-user = 'Angga'",
-                            "nama user = 'Angga'"
-                        ],
-                        "correctAnswer": 1
-                    },
-                    {
-                        "id": "py-q1-2",
-                        "question": "Python bersifat Case-Sensitive, artinya variabel 'Data' dan 'data' adalah...",
-                        "options": [
-                            "Sama saja",
-                            "Berbeda",
-                            "Hanya bisa digunakan satu",
-                            "Menyebabkan error"
-                        ],
-                        "correctAnswer": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": "e5f6g7h8-i9j0-4k1l-2m3n-4o5p6q7r8s9t",
-            "title": "Comment: Dokumentasi Kode (2/12)",
-            "type": "video",
-            "video": "jfZYh-uEi_A",
-            "description": "Mengapa komentar sangat penting untuk keterbacaan kode.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "f1g2h3i4-j5k6-4l7m-8n9o-0p1q2r3s4t5u",
-            "title": "Mengenal Tipe Data Python (3/12)",
-            "type": "video",
-            "video": "ZjssXCmqguU",
-            "description": "Eksplorasi String, Integer, Float, dan Boolean.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "g2h3i4j5-k6l7-4m8n-9o0p-1q2r3s4t5u6v",
-            "title": "Kuis 2: Tipe Data & Komentar",
-            "type": "exercise",
-            "exercise": {
-                "type": "quiz",
-                "questions": [
-                    {
-                        "id": "py-q2-1",
-                        "question": "Karakter apa yang digunakan untuk membuat komentar satu baris di Python?",
-                        "options": [
-                            "//",
-                            "/*",
-                            "#",
-                            "--"
-                        ],
-                        "correctAnswer": 2
-                    },
-                    {
-                        "id": "py-q2-2",
-                        "question": "Tipe data untuk angka desimal (seperti 3.14) adalah...",
-                        "options": [
-                            "Integer",
-                            "String",
-                            "Float",
-                            "Boolean"
-                        ],
-                        "correctAnswer": 2
-                    },
-                    {
-                        "id": "py-q2-3",
-                        "question": "Jika data berisi nilai True atau False, maka tipe datanya adalah...",
-                        "options": [
-                            "String",
-                            "Complex",
-                            "Boolean",
-                            "Integer"
-                        ],
-                        "correctAnswer": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": "h3i4j5k6-l7m8-4n9o-0p1q-2r3s4t5u6v7w",
-            "title": "Praktik Langsung: Tipe Data (4/12)",
-            "type": "video",
-            "video": "D44jsq-SOqM",
-            "description": "Melihat bagaimana tipe data bekerja dalam kode nyata.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "i4j5k6l7-m8n9-4o0p-1q2r-3s4t5u6v7w8x",
-            "title": "Casting: Mengubah Tipe Data (5/12)",
-            "type": "video",
-            "video": "qJnAxAdY4tM",
-            "description": "Cara mengubah Integer menjadi String dan sebaliknya.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "j5k6l7m8-n9o0-4p1q-2r3s-4t5u6v7w8x9y",
-            "title": "Tantangan: Konversi Tipe Data",
-            "type": "text",
-            "description": "Latihan mandiri mengubah input user.",
-            "content": "Buatlah program yang meminta user memasukkan umur (input akan berupa string), lalu ubah input tersebut menjadi integer dan tambahkan dengan angka 5.",
-            "checklist": [
-                "Gunakan fungsi input()",
-                "Gunakan casting int()",
-                "Tampilkan hasil penjumlahan dengan print()"
-            ]
-        },
-        {
-            "id": "k6l7m8n9-o0p1-4q2r-3s4t-5u6v7w8x9y0z",
-            "title": "Review & Latihan Gabungan (6/12)",
-            "type": "video",
-            "video": "iDmXGIAxG60",
-            "description": "Memperdalam pemahaman melalui kasus gabungan.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "l7m8n9o0-p1q2-4r3s-4t5u-6v7w8x9y0z1a",
-            "title": "Operator Aritmatika (7/12)",
-            "type": "video",
-            "video": "K8tmESHKmGo",
-            "description": "Operasi matematika: Tambah, Kurang, Kali, Bagi, Modulo, Eksponen.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "m8n9o0p1-q2r3-4s4t-5u6v-7w8x9y0z1a2b",
-            "title": "Kuis 3: Operasi Matematika",
-            "type": "exercise",
-            "exercise": {
-                "type": "quiz",
-                "questions": [
-                    {
-                        "id": "py-q3-1",
-                        "question": "Operator untuk mendapatkan sisa bagi (Modulo) adalah...",
-                        "options": [
-                            "/",
-                            "//",
-                            "%",
-                            "**"
-                        ],
-                        "correctAnswer": 2
-                    },
-                    {
-                        "id": "py-q3-2",
-                        "question": "Berapakah hasil dari 10 // 3 di Python?",
-                        "options": [
-                            "3.33",
-                            "3",
-                            "1",
-                            "3.0"
-                        ],
-                        "correctAnswer": 1
-                    },
-                    {
-                        "id": "py-q3-3",
-                        "question": "Operator '**' digunakan untuk...",
-                        "options": [
-                            "Perkalian dua kali",
-                            "Pembulatan",
-                            "Perpangkatan",
-                            "Modulo"
-                        ],
-                        "correctAnswer": 2
-                    }
-                ]
-            }
-        },
-        {
-            "id": "n9o0p1q2-r3s4-4t5u-6v7w-8x9y0z1a2b3c",
-            "title": "Operator Perbandingan (8/12)",
-            "type": "video",
-            "video": "eOyipI6zQ_E",
-            "description": "Membandingkan dua nilai (==, !=, >, <).",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "o0p1q2r3-s4t5-4u6v-7w8x-9y0z1a2b3c4d",
-            "title": "Operator Logika (9/12)",
-            "type": "video",
-            "video": "XO9qUkBQRZk",
-            "description": "Menggabungkan kondisi dengan AND, OR, dan NOT.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "p1q2r3s4-t5u6-4v7w-8x9y-0z1a2b3c4d5e",
-            "title": "Operator Assignment (10/12)",
-            "type": "video",
-            "video": "0I3CdKG6X-A",
-            "description": "Cara singkat mengisi nilai ke variabel (+=, -=, *=).",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "q2r3s4t5-u6v7-4w8x-9y0z-1a2b3c4d5e6f",
-            "title": "Review Latihan Komprehensif (11/12)",
-            "type": "video",
-            "video": "ybrK2sveLJA",
-            "description": "Latihan akhir menggabungkan semua operator yang dipelajari.",
-            "minWatchPercentage": 90
-        },
-        {
-            "id": "r3s4t5u6-v7w8-4x9y-0z1a-2b3c4d5e6f7g",
-            "title": "Ujian Teori: Logika & Operator",
-            "type": "exercise",
-            "exercise": {
-                "type": "quiz",
-                "questions": [
-                    {
-                        "id": "py-final-1",
-                        "question": "Jika a = True dan b = False, hasil dari (a and b) adalah...",
-                        "options": [
-                            "True",
-                            "False",
-                            "None",
-                            "Error"
-                        ],
-                        "correctAnswer": 1
-                    },
-                    {
-                        "id": "py-final-2",
-                        "question": "Operator mana yang digunakan untuk memeriksa apakah dua nilai TIDAK sama dengan?",
-                        "options": [
-                            "==",
-                            "=>",
-                            "!=",
-                            "><"
-                        ],
-                        "correctAnswer": 2
-                    },
-                    {
-                        "id": "py-final-3",
-                        "question": "Hasil dari 5 + 2 * 3 adalah...",
-                        "options": [
-                            "21",
-                            "11",
-                            "10",
-                            "13"
-                        ],
-                        "correctAnswer": 1
-                    }
-                ]
-            }
-        },
-        {
-            "id": "s4t5u6v7-w8x9-4y0z-1a2b-3c4d5e6f7g8h",
-            "title": "Persiapan Proyek Akhir",
-            "type": "text",
-            "description": "Instruksi sebelum mengumpulkan tugas.",
-            "content": "Selamat! Anda telah menyelesaikan dasar-dasar logika Python. Sekarang saatnya membuktikan kemampuan Anda dengan membuat program kalkulator sederhana atau sistem manajemen data kecil.",
-            "checklist": [
-                "Pastikan tidak ada SyntaxError",
-                "Gunakan nama variabel yang deskriptif",
-                "Berikan komentar pada bagian logika yang kompleks"
-            ]
-        }
-    ]
+  "id": "2738d2f5-4f7a-4c8a-9d62-8279b5a2ede2",
+  "slug": "python-dasar-halotech",
+  "title": "🐍 Belajar Python Bahasa Indonesia - HaloTech",
+  "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: HaloTech Academy",
+  "submissionUrl": "https://forms.gle/e23ZghDPDnjjiNFx9",
+  "submissionDescription": "Tugas Akhir Modul Python Dasar:\nBuatlah sebuah program Python sederhana (file .py) yang menerapkan ketentuan berikut:\n• Menggunakan minimal 3 tipe data berbeda (String, Integer, Float/Boolean).\n• Terdapat implementasi Operator Aritmatika untuk perhitungan.\n• Terdapat implementasi Operator Logika atau Perbandingan.\n• Menggunakan komentar untuk menjelaskan alur kode.\n• Program harus menerima input dari user dan menampilkan output yang diformat.\n\nKumpulkan dalam format .zip atau link GitHub.",
+  "lessons": [
+    {
+      "id": "a1c2d3e4-b5f6-4a5b-8c9d-0e1f2a3b4c5d",
+      "title": "Mengenal Dunia Pemrograman dengan Python",
+      "type": "text",
+      "description": "Selamat datang di langkah pertama Anda menjadi seorang Programmer! Sebelum kita menulis baris kode pertama, sangat penting untuk memahami \"siapa\" Python itu sebenarnya dan mengapa bahasa ini menjadi primadona di era kecerdasan buatan (AI) saat ini.",
+      "content": "**1. Apa itu Python?** Python adalah bahasa pemrograman tingkat tinggi yang diciptakan oleh **Guido van Rossum** dan pertama kali dirilis pada tahun 1991. Filosofi desain Python mengutamakan keterbacaan kode. Artinya, Python dirancang agar mudah dibaca dan ditulis oleh manusia, hampir menyerupai bahasa Inggris sederhana. Itulah sebabnya Python sering disebut sebagai bahasa terbaik untuk pemula.\n\n**2. Mengapa Belajar Python?**\n\n- **Sintaks Sederhana:** Anda tidak perlu dipusingkan dengan tanda kurung atau titik koma yang rumit seperti pada bahasa C++ atau Java.\n- **Multiguna (Versatile):** Python digunakan di hampir semua bidang, mulai dari pengembangan web (*Backend*), analisis data, sains, hingga pengembangan kecerdasan buatan (*Artificial Intelligence*).\n- **Komunitas Besar:** Karena populer, Anda akan sangat mudah menemukan solusi di internet jika mengalami kendala atau *error*.\n- **Gaji & Peluang Kerja:** Permintaan akan *Python Developer* terus meningkat seiring dengan tren *Big Data* dan *Machine Learning*.\n\n**3. Persiapan Lingkungan Kerja (Workspace)** Untuk mulai belajar, Anda membutuhkan dua \"senjata\" utama:\n\n1. **Python Interpreter:** Mesin yang akan menerjemahkan kode Anda agar dimengerti oleh komputer. Anda bisa mengunduhnya di `python.org`.\n2. **Code Editor:** Tempat Anda mengetik kode. Kami sangat menyarankan **Visual Studio Code (VS Code)** karena ringan dan memiliki banyak fitur pendukung (ekstensi) yang memudahkan pemula.\n\n**4. Cara Belajar di Modul Ini** Materi ini disusun oleh **Raja Capybara Academy** dengan mengadaptasi seri dari **HaloTech Academy**. Alur belajar kita adalah:\n\n- **Pahami Konsep:** Baca teks dan tonton video penjelasan.\n- **Praktik:** Ketik ulang kode yang ada di video (jangan hanya *copy-paste*).\n- **Uji Diri:** Kerjakan kuis dan tantangan di setiap akhir sesi.\n\n",
+      "checklist": [
+        "Instal Python terbaru",
+        "Siapkan Code Editor",
+        "Pahami kegunaan Python di era AI"
+      ]
+    },
+    {
+      "id": "b02ca4aa-1398-4887-aa92-6f26c3cd8519",
+      "title": "Langkah Pertama Belajar Pemrograman (0/12)",
+      "type": "video",
+      "description": "Panduan awal memulai perjalanan koding Anda.",
+      "video": "-DGFFxblTUw",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f",
+      "title": "Variabel: Wadah Penyimpan Data (1/12)",
+      "type": "video",
+      "description": "Memahami cara menyimpan data ke dalam variabel.",
+      "video": "OFYXe6qoYok",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "d112f0a7-b301-452e-a246-30c37237e264",
+      "title": "Kuis 1: Dasar Variabel",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "e73ee430-aa55-47a7-9fe2-425f7b7297ec",
+            "question": "Manakah penulisan variabel yang valid di Python?",
+            "options": [
+              "1nama = 'Angga'",
+              "nama_user = 'Angga'",
+              "nama-user = 'Angga'",
+              "nama user = 'Angga'"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "f175b5b5-26e0-4ed4-8a54-ed18b704f863",
+            "question": "Python bersifat Case-Sensitive, artinya variabel 'Data' dan 'data' adalah...",
+            "options": [
+              "Sama saja",
+              "Berbeda",
+              "Hanya bisa digunakan satu",
+              "Menyebabkan error"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "37e02a8b-d846-4d25-9065-7db080fd1a26",
+      "title": "Comment: Dokumentasi Kode (2/12)",
+      "type": "video",
+      "description": "Mengapa komentar sangat penting untuk keterbacaan kode.",
+      "video": "jfZYh-uEi_A",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "cd0a8eb6-592b-4f69-8099-6e2dbfa3f88c",
+      "title": "Mengenal Tipe Data Python (3/12)",
+      "type": "video",
+      "description": "Eksplorasi String, Integer, Float, dan Boolean.",
+      "video": "ZjssXCmqguU",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "befe3091-04a1-4c03-9630-1184b14b378c",
+      "title": "Kuis 2: Tipe Data & Komentar",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "70463edb-a8c4-488c-9af3-60bf75ea9aed",
+            "question": "Karakter apa yang digunakan untuk membuat komentar satu baris di Python?",
+            "options": [
+              "//",
+              "/*",
+              "#",
+              "--"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "42d8e660-f488-4ef1-94ea-ee30c60301c1",
+            "question": "Tipe data untuk angka desimal (seperti 3.14) adalah...",
+            "options": [
+              "Integer",
+              "String",
+              "Float",
+              "Boolean"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "10b1db8f-7671-4cb6-a0d6-f00a04cc6f13",
+            "question": "Jika data berisi nilai True atau False, maka tipe datanya adalah...",
+            "options": [
+              "String",
+              "Complex",
+              "Boolean",
+              "Integer"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "ef8a6075-8af9-435c-bbda-83aaf8acc1e5",
+      "title": "Praktik Langsung: Tipe Data (4/12)",
+      "type": "video",
+      "description": "Melihat bagaimana tipe data bekerja dalam kode nyata.",
+      "video": "D44jsq-SOqM",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "de4e0ba3-e01d-4c59-ba7f-5f8734f8aa51",
+      "title": "Casting: Mengubah Tipe Data (5/12)",
+      "type": "video",
+      "description": "Cara mengubah Integer menjadi String dan sebaliknya.",
+      "video": "qJnAxAdY4tM",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "2077b521-e27f-4a3b-a5c1-c961f7fcd935",
+      "title": "Tantangan: Konversi Tipe Data",
+      "type": "text",
+      "description": "Latihan mandiri mengubah input user.",
+      "content": "Buatlah program yang meminta user memasukkan umur (input akan berupa string), lalu ubah input tersebut menjadi integer dan tambahkan dengan angka 5.",
+      "checklist": [
+        "Gunakan fungsi input()",
+        "Gunakan casting int()",
+        "Tampilkan hasil penjumlahan dengan print()"
+      ]
+    },
+    {
+      "id": "c3f8cdc6-92cb-4e25-be82-09943f6d4e5d",
+      "title": "Review & Latihan Gabungan (6/12)",
+      "type": "video",
+      "description": "Memperdalam pemahaman melalui kasus gabungan.",
+      "video": "iDmXGIAxG60",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "9cf0d7a3-bbec-4eca-b579-d951d9162e9a",
+      "title": "Operator Aritmatika (7/12)",
+      "type": "video",
+      "description": "Operasi matematika: Tambah, Kurang, Kali, Bagi, Modulo, Eksponen.",
+      "video": "K8tmESHKmGo",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "c73f8dc2-1d6f-415c-8814-d27f4d68abab",
+      "title": "Kuis 3: Operasi Matematika",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "c7c631b3-9659-4b47-8625-e31ed66d5d5b",
+            "question": "Operator untuk mendapatkan sisa bagi (Modulo) adalah...",
+            "options": [
+              "/",
+              "//",
+              "%",
+              "**"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "b5aae384-d22e-402f-a693-bf3c0e6c3e3a",
+            "question": "Berapakah hasil dari 10 // 3 di Python?",
+            "options": [
+              "3.33",
+              "3",
+              "1",
+              "3.0"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "95c7ea5d-0ead-404e-bd5e-cd944601a966",
+            "question": "Operator '**' digunakan untuk...",
+            "options": [
+              "Perkalian dua kali",
+              "Pembulatan",
+              "Perpangkatan",
+              "Modulo"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cc590646-e627-45df-8d77-cfcf1d05483e",
+      "title": "Operator Perbandingan (8/12)",
+      "type": "video",
+      "description": "Membandingkan dua nilai (==, !=, >, <).",
+      "video": "eOyipI6zQ_E",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "260df1b9-2318-4f88-89b8-db2f31456e2a",
+      "title": "Operator Logika (9/12)",
+      "type": "video",
+      "description": "Menggabungkan kondisi dengan AND, OR, dan NOT.",
+      "video": "XO9qUkBQRZk",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "6c1a100c-69dd-45eb-8773-e84a96bd57be",
+      "title": "Operator Assignment (10/12)",
+      "type": "video",
+      "description": "Cara singkat mengisi nilai ke variabel (+=, -=, *=).",
+      "video": "0I3CdKG6X-A",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "9dd1495a-9f6f-4f94-b39a-674e48f8da37",
+      "title": "Review Latihan Komprehensif (11/12)",
+      "type": "video",
+      "description": "Latihan akhir menggabungkan semua operator yang dipelajari.",
+      "video": "ybrK2sveLJA",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "2863c71c-4872-4a6d-b4be-6ece79895cbc",
+      "title": "Ujian Teori: Logika & Operator",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "cd06f6c1-0bf0-436f-b3d3-8cddefa81e5d",
+            "question": "Jika a = True dan b = False, hasil dari (a and b) adalah...",
+            "options": [
+              "True",
+              "False",
+              "None",
+              "Error"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "2d7120eb-57c9-4e4c-a800-e473ae3248d8",
+            "question": "Operator mana yang digunakan untuk memeriksa apakah dua nilai TIDAK sama dengan?",
+            "options": [
+              "==",
+              "=>",
+              "!=",
+              "><"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "5168ed61-5167-4ab8-ab63-bc5474ada0fb",
+            "question": "Hasil dari 5 + 2 * 3 adalah...",
+            "options": [
+              "21",
+              "11",
+              "10",
+              "13"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "62cd676c-5fca-4d1e-8769-f4c993cdacde",
+      "title": "Persiapan Proyek Akhir",
+      "type": "text",
+      "description": "Instruksi sebelum mengumpulkan tugas.",
+      "content": "Selamat! Anda telah menyelesaikan dasar-dasar logika Python. Sekarang saatnya membuktikan kemampuan Anda dengan membuat program kalkulator sederhana atau sistem manajemen data kecil.",
+      "checklist": [
+        "Pastikan tidak ada SyntaxError",
+        "Gunakan nama variabel yang deskriptif",
+        "Berikan komentar pada bagian logika yang kompleks"
+      ]
+    }
+  ]
 }
