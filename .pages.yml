@@ -73,10 +73,6 @@ content:
             label: 🔑 Lesson ID
             type: uuid
             description: "Contoh: html-1"
-          - name: slug
-            label: 🔗 Slug Lesson
-            type: string
-            required: true
           - name: title
             label: 📌 Judul Pelajaran
             type: string
