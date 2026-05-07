@@ -7,8 +7,9 @@ content:
     fields:
       - name: id
         label: ID
-        type: string
+        type: uuid
         required: true
+        readonly: true
       - name: slug
         label: Slug
         type: string
@@ -50,8 +51,9 @@ content:
     fields:
       - name: id
         label: ID
-        type: string
+        type: uuid
         required: true
+        readonly: true
       - name: slug
         label: Slug
         type: string
@@ -127,7 +129,8 @@ content:
             fields:
               - name: id
                 label: Question ID
-                type: string
+                type: uuid
+                readonly: true
               - name: question
                 label: Question Text
                 type: text
