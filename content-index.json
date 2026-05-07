@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-07T09:53:45.639Z",
+  "generatedAt": "2026-05-07T09:57:25.722Z",
   "total": 1,
   "modules": [
     {
       "id": "a7aad1d5-c185-4c8a-a618-3279b5a2ede2",
       "slug": "html-dasar-wpu",
       "title": "🚀 HTML Dasar Untuk Pemula - WPU",
-      "description": "Seri lengkap mengenai cara membuat website menggunakan HTML. Mencakup sejarah, struktur dasar, hingga tag-tag modern.\n\nOleh: Sandhika Galih (UNPAS).\n\nSumber: https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F",
+      "description": "Modul ini adalah sebuah kurikulum belajar mandiri yang disusun untuk membantu Anda menguasai fondasi utama pengembangan web. Kami mengadaptasi materi pembelajaran dari seri video legendaris milik Sandhika Galih (Web Programming UNPAS) dan merestrukturnya ke dalam format yang lebih interaktif.",
       "lessonCount": 22,
       "image": null,
       "path": "content/modules/html-dasar-wpu.json"
