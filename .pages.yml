@@ -1,0 +1,152 @@
+content:
+  - name: modules
+    label: Modules
+    type: collection
+    path: content/modules
+    filename: "{fields.slug}.json"
+    fields:
+      - name: id
+        label: ID
+        type: string
+        required: true
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        description: "Digunakan sebagai nama file (contoh: html-dasar)"
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: submissionUrl
+        label: Submission URL
+        type: string
+      - name: submissionDescription
+        label: Submission Description
+        type: rich-text
+      - name: submissionAttachments
+        label: Submission Attachments
+        type: list
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: url
+            label: URL
+            type: string
+          - name: type
+            label: Type
+            type: select
+            options: [pdf, zip, image, code, link]
+
+  - name: lessons
+    label: Lessons
+    type: collection
+    path: content/lessons
+    filename: "{fields.slug}.json"
+    fields:
+      - name: id
+        label: ID
+        type: string
+        required: true
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        description: "Digunakan sebagai nama file (contoh: html-pengenalan)"
+      - name: moduleId
+        label: Module
+        type: reference
+        collection: modules
+        required: true
+        description: "Pilih modul induk untuk lesson ini"
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: type
+        label: Type
+        type: select
+        options: [video, text, exercise]
+      - name: description
+        label: Description
+        type: text
+      - name: video
+        label: Video (YouTube ID)
+        type: string
+        description: "Hanya diisi jika type adalah video"
+      - name: content
+        label: Content
+        type: rich-text
+      - name: checklist
+        label: Checklist
+        type: list
+        fields:
+          - name: item
+            label: Task Item
+            type: string
+      - name: attachments
+        label: Attachments
+        type: list
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: url
+            label: URL
+            type: string
+          - name: type
+            label: Type
+            type: select
+            options: [pdf, zip, image, code, link]
+      - name: duration
+        label: Duration (minutes)
+        type: number
+      - name: minWatchPercentage
+        label: Min Watch Percentage
+        type: number
+        description: "Default: 90"
+      - name: minScorePercentage
+        label: Min Score Percentage
+        type: number
+        description: "Default: 80"
+      - name: exercise
+        label: Exercise Configuration
+        type: object
+        fields:
+          - name: type
+            label: Exercise Type
+            type: select
+            options: [quiz, code]
+          - name: questions
+            label: Quiz Questions
+            type: list
+            fields:
+              - name: id
+                label: Question ID
+                type: string
+              - name: question
+                label: Question Text
+                type: text
+              - name: options
+                label: Options
+                type: list
+                fields:
+                  - name: option
+                    label: Option Text
+                    type: string
+              - name: correctAnswer
+                label: Correct Answer Index
+                type: number
+                description: "Indeks jawaban yang benar (mulai dari 0)"
+          - name: initialCode
+            label: Initial Code
+            type: text
+            description: "Kode awal untuk exercise type code"
+          - name: solution
+            label: Solution Code
+            type: text
+            description: "Solusi untuk exercise type code"
