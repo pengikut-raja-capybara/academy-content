@@ -4,7 +4,7 @@ content:
     type: collection
     path: content/modules
     format: json
-    filename: "{slug}" # PagesCMS otomatis menambahkan .json
+    filename: "{fields.slug}.json"
     fields:
       # ==========================================
       # 1. INFORMASI MODUL UMUM
