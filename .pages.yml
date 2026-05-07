@@ -1,4 +1,10 @@
-- name: modules
+# Pastikan konfigurasi media ada agar fitur UPLOAD berfungsi
+media:
+  input: public/uploads
+  output: /uploads
+
+content:
+  - name: modules
     label: 📚 Modules (Materi Kelas)
     type: collection
     path: content/modules
@@ -10,7 +16,7 @@
       # ==========================================
       - name: id
         label: 🔑 Module ID
-        type: string
+        type: uuid
         description: "Format unik, contoh: mod-html"
       - name: slug
         label: 🔗 Slug URL
@@ -49,11 +55,11 @@
           - name: url
             label: 🔗 Link URL Eksternal
             type: string
-            description: "Isi URL jika file ada di luar (Google Drive, dll)"
           - name: type
             label: Format File
             type: select
-            options: [ pdf, zip, image, code, link ]
+            options: 
+              values: [pdf, zip, image, code, link]
 
       # ==========================================
       # 3. DAFTAR PELAJARAN (LESSONS)
@@ -65,7 +71,7 @@
         fields:
           - name: id
             label: 🔑 Lesson ID
-            type: string
+            type: uuid
             description: "Contoh: html-1"
           - name: slug
             label: 🔗 Slug Lesson
@@ -114,7 +120,8 @@
               - name: type
                 label: Format Evaluasi
                 type: select
-                options: [ quiz, code ]
+                options: 
+                  values: [quiz, code]
               - name: questions
                 label: Daftar Pertanyaan Kuis
                 type: object
@@ -122,16 +129,18 @@
                 fields:
                   - name: id
                     label: ID Pertanyaan
-                    type: string
+                    type: uuid
                   - name: question
                     label: Soal Pertanyaan
                     type: text
                   
-                  # Kumpulan string menggunakan type: string + list: true
+                  # KUNCI PERBAIKAN: Di Pages CMS tidak ada 'type: list'. 
+                  # Gunakan type: string dengan tambahan list: true
                   - name: options
                     label: Pilihan Jawaban (A, B, C, D)
                     type: string
                     list: true
+                    description: "Tekan enter untuk menambah pilihan jawaban"
                     
                   - name: correctAnswer
                     label: Indeks Jawaban Benar (0, 1, 2, dst)
@@ -140,14 +149,14 @@
                     label: Penjelasan Jawaban (Opsional)
                     type: text
 
-          # DIGANTI: type 'code' diubah menjadi 'text' agar tidak crash di Pages CMS
           - name: initialCode
             label: "💻 [Tugas Code] Kode Awal (Starter)"
-            type: text 
+            type: code
           - name: solution
             label: "💻 [Tugas Code] Kode Solusi"
-            type: text
+            type: code
 
+          # KUNCI PERBAIKAN SAMA: Gunakan type: string dan list: true
           - name: checklist
             label: "✅ To-Do List (Tugas Praktik)"
             type: string
@@ -170,4 +179,5 @@
               - name: type
                 label: Format File
                 type: select
-                options: [ pdf, zip, image, code, link ]
+                options: 
+                  values: [pdf, zip, image, code, link]
