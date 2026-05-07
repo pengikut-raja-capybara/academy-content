@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-07T08:58:46.412Z",
+  "generatedAt": "2026-05-07T09:25:02.413Z",
   "total": 1,
   "modules": [
     {
       "id": "a7aad1d5-c185-4c8a-a618-3279b5a2ede2",
       "slug": "html-dasar-wpu",
-      "title": "HTML Dasar Untuk Pemula - WPU",
-      "description": "Seri mengenai bagaimana membuat website menggunakan HTML. Mencakup pembahasan mengenai sejarah HTML, membuat halaman web sederhana, dan penjelasan mengenai tag-tag yang ada pada HTML.\n\noleh Sandhika Galih\n\nProgram Studi Teknik Informatika Universitas Pasundan Bandung.\n\nSumber : https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F",
-      "lessonCount": 2,
+      "title": "🚀 HTML Dasar Untuk Pemula - WPU",
+      "description": "Seri lengkap mengenai cara membuat website menggunakan HTML. Mencakup sejarah, struktur dasar, hingga tag-tag modern.\n\nOleh: Sandhika Galih (UNPAS).\n\nSumber: https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F",
+      "lessonCount": 22,
       "image": null,
       "path": "content/modules/html-dasar-wpu.json"
     }
