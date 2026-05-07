@@ -1,146 +1,175 @@
 content:
   - name: modules
-    label: Modules
+    label: 📚 Modules (Materi Kelas)
     type: collection
     path: content/modules
     format: json
-    filename: "{fields.slug}.json"
+    filename: "{slug}" # PagesCMS otomatis menambahkan .json
     fields:
+      # ==========================================
+      # 1. INFORMASI MODUL UMUM
+      # ==========================================
       - name: id
-        label: ID
-        type: uuid
-        required: true
-        readonly: true
-      - name: slug
-        label: Slug
+        label: 🔑 Module ID
         type: string
         required: true
-        description: "Digunakan sebagai nama file (contoh: html-dasar)"
+        description: "Format unik, contoh: mod-html"
+      - name: slug
+        label: 🔗 Slug URL
+        type: string
+        required: true
+        description: "Huruf kecil & strip, contoh: html-dasar"
       - name: title
-        label: Title
+        label: 📌 Judul Modul
         type: string
         required: true
       - name: description
-        label: Description
+        label: 📝 Deskripsi Modul
         type: text
+
+      # ==========================================
+      # 2. TUGAS AKHIR (SUBMISSION)
+      # ==========================================
       - name: submissionUrl
-        label: Submission URL
+        label: 🎯 [TUGAS AKHIR] Link Pengumpulan Form
         type: string
+        description: "Kosongkan jika tidak ada tugas akhir. Contoh: https://forms.google..."
       - name: submissionDescription
-        label: Submission Description
+        label: 🎯 [TUGAS AKHIR] Instruksi Pengerjaan
         type: rich-text
       - name: submissionAttachments
-        label: Submission Attachments
+        label: 🎯 [TUGAS AKHIR] File Lampiran (Template/Soal)
         type: list
         fields:
           - name: title
-            label: Title
+            label: Nama File
             type: string
           - name: url
-            label: URL
+            label: Link URL File
             type: string
           - name: type
-            label: Type
+            label: Format File
             type: select
             options: [pdf, zip, image, code, link]
+
+      # ==========================================
+      # 3. DAFTAR PELAJARAN (LESSONS)
+      # ==========================================
       - name: lessons
-        label: Lessons
+        label: 📖 Daftar Pelajaran (Lessons)
         type: list
         fields:
           - name: id
-            label: ID
-            type: uuid
+            label: 🔑 Lesson ID
+            type: string
             required: true
-            readonly: true
+            description: "Contoh: html-1"
           - name: slug
-            label: Slug
+            label: 🔗 Slug Lesson
             type: string
             required: true
           - name: title
-            label: Title
+            label: 📌 Judul Pelajaran
             type: string
             required: true
           - name: type
-            label: Type
+            label: 🔀 TIPE MATERI (PENTING)
             type: select
-            options: [video, text, exercise]
+            required: true
+            options: 
+              - label: "▶️ Video Pembelajaran"
+                value: "video"
+              - label: "📄 Teks / Artikel"
+                value: "text"
+              - label: "📝 Evaluasi / Kuis"
+                value: "exercise"
           - name: description
-            label: Description
+            label: 📝 Deskripsi Singkat Materi
             type: text
+
+          # --- BAGIAN KHUSUS VIDEO ---
           - name: video
-            label: Video (YouTube ID)
+            label: "▶️ [KHUSUS VIDEO] YouTube ID"
             type: string
-            description: "Hanya diisi jika type adalah video"
-          - name: content
-            label: Content
-            type: rich-text
-          - name: checklist
-            label: Checklist
-            type: list
-            fields:
-              - name: item
-                label: Task Item
-                type: string
-          - name: attachments
-            label: Attachments
-            type: list
-            fields:
-              - name: title
-                label: Title
-                type: string
-              - name: url
-                label: URL
-                type: string
-              - name: type
-                label: Type
-                type: select
-                options: [pdf, zip, image, code, link]
+            description: "Contoh: NBZ9Ro6UKV8 (Bukan URL lengkap)"
           - name: duration
-            label: Duration (minutes)
+            label: "⏳ Estimasi Durasi (Menit)"
             type: number
           - name: minWatchPercentage
-            label: Min Watch Percentage
+            label: "📈 Syarat Tontonan Lulus (%)"
             type: number
-            description: "Default: 90"
+            description: "Biarkan kosong untuk default 90%"
+
+          # --- BAGIAN KHUSUS TEKS/ARTIKEL ---
+          - name: content
+            label: "📄 [KHUSUS TEKS] Isi Materi Artikel"
+            type: rich-text
+            description: "Tulis materi lengkap di sini jika tipe materi adalah Teks"
+
+          # --- BAGIAN KHUSUS KUIS/EVALUASI ---
           - name: minScorePercentage
-            label: Min Score Percentage
+            label: "💯 [KHUSUS KUIS] Syarat Nilai Kelulusan (%)"
             type: number
-            description: "Default: 80"
+            description: "Batas nilai minimum untuk lulus. Default: 80"
           - name: exercise
-            label: Exercise Configuration
+            label: "📝 [KHUSUS KUIS] Pengaturan Pertanyaan"
             type: object
             fields:
               - name: type
-                label: Exercise Type
+                label: Format Evaluasi
                 type: select
                 options: [quiz, code]
               - name: questions
-                label: Quiz Questions
+                label: Daftar Pertanyaan Kuis
                 type: list
                 fields:
                   - name: id
-                    label: Question ID
-                    type: uuid
-                    readonly: true
+                    label: ID Pertanyaan (Otomatis)
+                    type: string
                   - name: question
-                    label: Question Text
+                    label: Soal Pertanyaan
                     type: text
+                  
+                  # PERBAIKAN FATAL: Dibuat string[] murni
                   - name: options
-                    label: Options
+                    label: Pilihan Jawaban (A, B, C, D)
                     type: list
-                    fields:
-                      - name: option
-                        label: Option Text
-                        type: string
+                    description: "Tambahkan teks pilihan jawaban secara berurutan"
+                  
                   - name: correctAnswer
-                    label: Correct Answer Index
+                    label: Indeks Jawaban Benar
                     type: number
-                    description: "Indeks jawaban yang benar (mulai dari 0)"
+                    description: "Mulai dari 0 (0 = Opsi 1, 1 = Opsi 2, dst)"
+                  - name: explanation
+                    label: Penjelasan Jawaban (Opsional)
+                    type: text
+
+              # Menggunakan code editor bawaan CMS
               - name: initialCode
-                label: Initial Code
-                type: text
-                description: "Kode awal untuk exercise type code"
+                label: "💻 [Tugas Code] Kode Awal (Starter)"
+                type: code 
               - name: solution
-                label: Solution Code
-                type: text
-                description: "Solusi untuk exercise type code"
+                label: "💻 [Tugas Code] Kode Solusi"
+                type: code
+
+          # --- BAGIAN UMUM (BISA DIGUNAKAN SEMUA TIPE) ---
+          # PERBAIKAN FATAL: Dibuat string[] murni
+          - name: checklist
+            label: "✅ To-Do List (Tugas Praktik)"
+            type: list
+            description: "Daftar checklist yang harus dicentang user"
+
+          - name: attachments
+            label: "📎 File Lampiran Materi Tambahan"
+            type: list
+            fields:
+              - name: title
+                label: Nama File
+                type: string
+              - name: url
+                label: Link File
+                type: string
+              - name: type
+                label: Format File
+                type: select
+                options: [pdf, zip, image, code, link]
