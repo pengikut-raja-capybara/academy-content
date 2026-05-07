@@ -146,14 +146,6 @@ content:
                     label: Explanation
                     type: text
 
-              # Menggunakan code editor bawaan CMS
-              - name: initialCode
-                label: Initial Code
-                type: code 
-              - name: solution
-                label: Solution Code
-                type: code
-
           # KUNCI PERBAIKAN SAMA: Gunakan type: string dan list: true
           - name: checklist
             label: Checklist
