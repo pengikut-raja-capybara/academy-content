@@ -149,13 +149,6 @@ content:
                     label: Penjelasan Jawaban (Opsional)
                     type: text
 
-          - name: initialCode
-            label: "💻 [Tugas Code] Kode Awal (Starter)"
-            type: code
-          - name: solution
-            label: "💻 [Tugas Code] Kode Solusi"
-            type: code
-
           # KUNCI PERBAIKAN SAMA: Gunakan type: string dan list: true
           - name: checklist
             label: "✅ To-Do List (Tugas Praktik)"
