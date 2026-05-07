@@ -3,6 +3,7 @@
   "slug": "html-dasar-wpu",
   "title": "🚀 HTML Dasar Untuk Pemula - WPU",
   "description": "Seri lengkap mengenai cara membuat website menggunakan HTML. Mencakup sejarah, struktur dasar, hingga tag-tag modern.\n\nOleh: Sandhika Galih (UNPAS).\n\nSumber: https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F",
+  "submissionDescription": "**Tugas Akhir: Membangun Halaman Web Statis**\n\nBuatlah sebuah file HTML dengan ketentuan teknis sebagai berikut:\n\n- **Struktur Dokumen**: Harus menggunakan struktur HTML5 yang benar dan lengkap, mulai dari `<!DOCTYPE html>`, `<html>`, `<head>`, hingga `<body>`.\n- **Hierarki Teks**:\n  - Terdapat minimal **1 heading utama** (`<h1>`).\n  - Terdapat minimal **2 sub-heading** (`<h2>`).\n  - Berisi minimal **3 paragraf** teks yang bersifat informatif.\n- **Konten Multimedia**: Memasukkan minimal **1 gambar** dan wajib menyertakan atribut `alt` yang deskriptif.\n- **Struktur Data**: Membuat sebuah **tabel** yang terdiri dari minimal 3 baris dan 3 kolom.\n- **Interaksi Pengguna**: Menyediakan sebuah **form** yang berisi minimal **3 jenis input berbeda** (misalnya: teks, email, dan tombol submit).\n\n**Teknis Pengumpulan**\n\n- **Format File**: Semua file (HTML dan aset gambar) harus dikompres dalam format **.zip**.\n- **Media Pengumpulan**: Hasil karya diunggah melalui tautan Google Form yang telah disediakan di platform.\n\n",
   "lessons": [
     {
       "id": "6e2b3471-706d-4950-896a-012345678901",
@@ -16,11 +17,11 @@
       ]
     },
     {
-      "id": "7d8f9e0a-1b2c-3d4e-5f6g-7h8i9j0k1l2m",
+      "id": "52c95129-92e8-425d-8c1c-49ee52147521",
       "title": "Pendahuluan HTML (1/13)",
       "type": "video",
-      "video": "NBZ9Ro6UKV8",
       "description": "Pengenalan sejarah dan fungsi utama HTML.",
+      "video": "NBZ9Ro6UKV8",
       "minWatchPercentage": 90
     },
     {
@@ -31,7 +32,7 @@
         "type": "quiz",
         "questions": [
           {
-            "id": "q1-1",
+            "id": "7b3909ef-c601-4fc7-b1f6-4c294af5f6f8",
             "question": "Apa singkatan dari HTML?",
             "options": [
               "Hyper Text Markup Language",
@@ -42,7 +43,7 @@
             "correctAnswer": 0
           },
           {
-            "id": "q1-2",
+            "id": "8fec017c-6592-4ea4-bd48-1ec4dc2fdeb2",
             "question": "Siapa penemu pertama HTML?",
             "options": [
               "Mark Zuckerberg",
@@ -59,16 +60,16 @@
       "id": "b02ca4aa-1398-4887-aa92-6f26c3cd8519",
       "title": "Hello World! (2/13)",
       "type": "video",
-      "video": "1NicaVOCXHA",
       "description": "Membuat dan menjalankan file HTML pertama Anda.",
+      "video": "1NicaVOCXHA",
       "minWatchPercentage": 90
     },
     {
-      "id": "3sLSi9L5-nWE-4c8a-a618-3279b5a2ede2",
+      "id": "a9db6581-b521-4044-b8df-777ea831839b",
       "title": "Setup Code Editor (3/13)",
       "type": "video",
-      "video": "3sLSi9L5nWE",
       "description": "Memasang VS Code dan ekstensi pendukung.",
+      "video": "3sLSi9L5nWE",
       "minWatchPercentage": 90
     },
     {
@@ -79,7 +80,7 @@
         "type": "quiz",
         "questions": [
           {
-            "id": "q2-1",
+            "id": "9e891b38-a56d-44f0-b6a6-89c5816b36fc",
             "question": "Ekstensi file apa yang digunakan untuk dokumen HTML?",
             "options": [
               ".txt",
@@ -90,7 +91,7 @@
             "correctAnswer": 2
           },
           {
-            "id": "q2-2",
+            "id": "382bc9e8-64c3-4623-86de-132c2c6762d9",
             "question": "Manakah editor kode yang disarankan dalam video ini?",
             "options": [
               "Notepad++",
@@ -104,22 +105,22 @@
       }
     },
     {
-      "id": "cUWBYzA6-M-8-4c8a-a618-3279b5a2ede2",
+      "id": "7c4ecbbd-7575-4182-bf36-b9c54925f88a",
       "title": "Memahami Tag HTML (4/13)",
       "type": "video",
-      "video": "cUWBYzA6M-8",
       "description": "Anatomi tag, elemen, dan atribut.",
+      "video": "cUWBYzA6M-8",
       "minWatchPercentage": 90
     },
     {
-      "id": "d1e2f3g4-h5i6-4b6c-9d8e-7f6g5h4i3j2k",
+      "id": "d93dc779-eaee-4998-b610-75e8cd1c6857",
       "title": "Kuis 3: Anatomi Tag",
       "type": "exercise",
       "exercise": {
         "type": "quiz",
         "questions": [
           {
-            "id": "q3-1",
+            "id": "2ffd4dd8-2439-43cb-987f-a9a5755107b3",
             "question": "Bagian tag yang memberikan informasi tambahan disebut...",
             "options": [
               "Element",
@@ -130,7 +131,7 @@
             "correctAnswer": 1
           },
           {
-            "id": "q3-2",
+            "id": "bede283d-7c73-4d0d-927d-85804cdc1cbf",
             "question": "Manakah penulisan tag penutup yang benar?",
             "options": [
               "<p>",
@@ -144,23 +145,23 @@
       }
     },
     {
-      "id": "Dl-bIYBc9gM-4c8a-a618-3279b5a2ede2",
+      "id": "20b0e7af-08fa-45ad-8cdd-28262231377c",
       "title": "Paragraf & Text Formatting (5/13)",
       "type": "video",
-      "video": "Dl_bIYBc9gM",
       "description": "Mengelola teks dengan tag p, br, dan hr.",
+      "video": "Dl_bIYBc9gM",
       "minWatchPercentage": 90
     },
     {
-      "id": "SMetRBdI-h-8-4c8a-a618-3279b5a2ede2",
+      "id": "a4d631c2-3c7e-4419-aa67-dab3045ab6b0",
       "title": "Heading & Hierarki (6/13)",
       "type": "video",
-      "video": "SMetRBdIh-8",
       "description": "Pentingnya H1 sampai H6 untuk struktur dan SEO.",
+      "video": "SMetRBdIh-8",
       "minWatchPercentage": 90
     },
     {
-      "id": "f3a2b1c0-d9e8-7f6g-5h4i-3j2k1l0m9n8o",
+      "id": "9f4fb03c-20ea-47b1-b595-aec84421e6a3",
       "title": "Tantangan 1: Artikel Berita Dasar",
       "type": "text",
       "description": "Latihan praktis menggabungkan Heading dan Paragraf.",
@@ -172,38 +173,38 @@
       ]
     },
     {
-      "id": "gLHEoeup-IZs-4c8a-a618-3279b5a2ede2",
+      "id": "93c142f3-85dd-4114-b7e1-63de391b2361",
       "title": "List (7/13)",
       "type": "video",
-      "video": "gLHEoeupIZs",
       "description": "Membuat daftar terurut dan tidak terurut.",
+      "video": "gLHEoeupIZs",
       "minWatchPercentage": 90
     },
     {
-      "id": "QIlBOI-hTuA-4c8a-a618-3279b5a2ede2",
+      "id": "c80385d3-ae99-4bec-ab1c-26b9f988a038",
       "title": "Hyperlink (8/13)",
       "type": "video",
-      "video": "QIlBOI-hTuA",
       "description": "Menghubungkan halaman satu dengan yang lain.",
+      "video": "QIlBOI-hTuA",
       "minWatchPercentage": 90
     },
     {
-      "id": "yb-emYhY3Pc-4c8a-a618-3279b5a2ede2",
+      "id": "88ed7eb9-ff9c-4c2e-8ee6-bb5c51e9ef9a",
       "title": "Menampilkan Gambar (9/13)",
       "type": "video",
-      "video": "yb_emYhY3Pc",
       "description": "Tag img dan atribut penting lainnya.",
+      "video": "yb_emYhY3Pc",
       "minWatchPercentage": 90
     },
     {
-      "id": "e5d4c3b2-a1b0-c9d8-e7f6-g5h4i3j2k1l0",
+      "id": "df33aabf-a6e3-467e-9d44-ed938831fea5",
       "title": "Kuis 4: List, Link, & Image",
       "type": "exercise",
       "exercise": {
         "type": "quiz",
         "questions": [
           {
-            "id": "q4-1",
+            "id": "b9115cf6-232c-4ed5-997d-c26a34401045",
             "question": "Tag apa yang digunakan untuk membuat daftar poin (bullet)?",
             "options": [
               "<ol>",
@@ -214,7 +215,7 @@
             "correctAnswer": 1
           },
           {
-            "id": "q4-2",
+            "id": "c1f464eb-6022-4db6-9b8a-f6018c51b2d7",
             "question": "Atribut mana yang menentukan alamat tujuan sebuah link?",
             "options": [
               "src",
@@ -225,7 +226,7 @@
             "correctAnswer": 2
           },
           {
-            "id": "q4-3",
+            "id": "dad5a662-5c0f-4998-9fe2-eb9cbbd988d6",
             "question": "Atribut 'alt' pada tag <img> berfungsi untuk...",
             "options": [
               "Mengatur ukuran gambar",
@@ -239,19 +240,19 @@
       }
     },
     {
-      "id": "7-QNafrXigs-4c8a-a618-3279b5a2ede2",
+      "id": "27d75be1-cd79-485c-a3e3-4d621a647275",
       "title": "Tabel Dasar (10/13)",
       "type": "video",
-      "video": "7-QNafrXigs",
       "description": "Belajar membuat baris dan kolom data.",
+      "video": "7-QNafrXigs",
       "minWatchPercentage": 90
     },
     {
-      "id": "qs8G2XWf7Yk-4c8a-a618-3279b5a2ede2",
+      "id": "1484145f-2e09-42c7-bd23-16dfe5fb3845",
       "title": "Tabel Lanjutan (11/13)",
       "type": "video",
-      "video": "qs8G2XWf7Yk",
       "description": "Menggabungkan sel dengan Rowspan dan Colspan.",
+      "video": "qs8G2XWf7Yk",
       "minWatchPercentage": 90
     },
     {
@@ -262,7 +263,7 @@
         "type": "quiz",
         "questions": [
           {
-            "id": "q5-1",
+            "id": "ce95c2cf-d795-4d59-a70a-a10d8b30e0c9",
             "question": "Tag yang digunakan untuk membuat baris baru pada tabel adalah...",
             "options": [
               "<td>",
@@ -273,7 +274,7 @@
             "correctAnswer": 2
           },
           {
-            "id": "q5-2",
+            "id": "067d9bcf-f1da-462f-9933-a93e03cdd1fe",
             "question": "Untuk menggabungkan dua kolom menjadi satu, kita menggunakan atribut...",
             "options": [
               "rowspan",
@@ -287,30 +288,30 @@
       }
     },
     {
-      "id": "LQf-Jj7jbCI-4c8a-a618-3279b5a2ede2",
+      "id": "162779fe-ec35-4e0c-9562-aa5e4f47dfdb",
       "title": "Form Dasar (12/13)",
       "type": "video",
-      "video": "LQf_Jj7jbCI",
       "description": "Input teks, label, dan button.",
+      "video": "LQf_Jj7jbCI",
       "minWatchPercentage": 90
     },
     {
-      "id": "CNkLKU-LoE-4c8a-a618-3279b5a2ede2",
+      "id": "a3616135-07cd-4575-b449-54fa69bf41d9",
       "title": "Form Lanjutan (13/13)",
       "type": "video",
-      "video": "_CNkLKU-LoE",
       "description": "Radio, Checkbox, dan Select option.",
+      "video": "_CNkLKU-LoE",
       "minWatchPercentage": 90
     },
     {
-      "id": "z9y8x7w6-v5u4-t3s2-r1q0-p9o8n7m6l5k4",
+      "id": "af86f470-336d-4f7f-89c4-853b32a977d2",
       "title": "Kuis 6: Interaksi User (Form)",
       "type": "exercise",
       "exercise": {
         "type": "quiz",
         "questions": [
           {
-            "id": "q6-1",
+            "id": "eb22f1f1-e9b8-4f71-917f-d174ea3f0650",
             "question": "Tipe input manakah yang memungkinkan user memilih hanya satu dari beberapa pilihan?",
             "options": [
               "checkbox",
@@ -321,7 +322,7 @@
             "correctAnswer": 1
           },
           {
-            "id": "q6-2",
+            "id": "e75f386a-6bcb-4661-a5db-51eaeaddea87",
             "question": "Tag apa yang digunakan untuk membuat daftar pilihan drop-down?",
             "options": [
               "<input type='list'>",
@@ -342,7 +343,7 @@
         "type": "quiz",
         "questions": [
           {
-            "id": "final-1",
+            "id": "195c63a0-b8d2-4d23-84e4-9f3e716ca2cf",
             "question": "Manakah urutan struktur dasar HTML yang benar?",
             "options": [
               "head, body, html",
@@ -353,7 +354,7 @@
             "correctAnswer": 1
           },
           {
-            "id": "final-2",
+            "id": "42369ee6-77fc-4087-8f5c-9fcacdb6704f",
             "question": "Tag mana yang digunakan untuk baris baru tanpa memberikan spasi antar paragraf?",
             "options": [
               "<br>",
@@ -364,7 +365,7 @@
             "correctAnswer": 0
           },
           {
-            "id": "final-3",
+            "id": "5dd9d8c5-c4ca-48bc-a894-2ec50af2567c",
             "question": "Tag semantik HTML5 mana yang digunakan untuk membungkus navigasi utama?",
             "options": [
               "<section>",
