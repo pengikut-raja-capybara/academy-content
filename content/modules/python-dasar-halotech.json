@@ -2,7 +2,7 @@
   "id": "2738d2f5-4f7a-4c8a-9d62-8279b5a2ede2",
   "slug": "python-dasar-halotech",
   "title": "🐍 Belajar Python Bahasa Indonesia - HaloTech",
-  "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: HaloTech Academy",
+  "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nSumber Materi: HaloTech Academy",
   "submissionUrl": "https://forms.gle/e23ZghDPDnjjiNFx9",
   "submissionDescription": "Tugas Akhir Modul Python Dasar:\nBuatlah sebuah program Python sederhana (file .py) yang menerapkan ketentuan berikut:\n• Menggunakan minimal 3 tipe data berbeda (String, Integer, Float/Boolean).\n• Terdapat implementasi Operator Aritmatika untuk perhitungan.\n• Terdapat implementasi Operator Logika atau Perbandingan.\n• Menggunakan komentar untuk menjelaskan alur kode.\n• Program harus menerima input dari user dan menampilkan output yang diformat.\n\nKumpulkan dalam format .zip atau link GitHub.",
   "lessons": [
