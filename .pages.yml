@@ -1,5 +1,4 @@
-content:
-  - name: modules
+- name: modules
     label: 📚 Modules (Materi Kelas)
     type: collection
     path: content/modules
@@ -11,8 +10,8 @@ content:
       # ==========================================
       - name: id
         label: 🔑 Module ID
-        type: uuid
-        description: "Format unik, contoh: mod-html (Dikosongkan akan terisi otomatis)"
+        type: string # PERBAIKAN: Pages CMS tidak punya type 'uuid', gunakan 'string'
+        description: "Format unik, contoh: mod-html"
       - name: slug
         label: 🔗 Slug URL
         type: string
@@ -46,11 +45,11 @@ content:
             type: string
           - name: file
             label: 📤 Upload File Baru
-            type: file
+            type: file 
           - name: url
             label: 🔗 Link URL Eksternal
             type: string
-            description: "Isi URL jika file ada di luar (Google Drive, dll) dan Anda tidak mengunggah file di atas"
+            description: "Isi URL jika file ada di luar (Google Drive, dll)"
           - name: type
             label: Format File
             type: select
@@ -66,8 +65,8 @@ content:
         fields:
           - name: id
             label: 🔑 Lesson ID
-            type: uuid
-            description: "Contoh: html-1 (Dikosongkan akan terisi otomatis)"
+            type: string # PERBAIKAN: Pages CMS tidak punya type 'uuid', gunakan 'string'
+            description: "Contoh: html-1"
           - name: slug
             label: 🔗 Slug Lesson
             type: string
@@ -95,7 +94,7 @@ content:
           - name: video
             label: "▶️ [KHUSUS VIDEO] YouTube ID"
             type: string
-            description: "Contoh: NBZ9Ro6UKV8 (Bukan URL lengkap)"
+            description: "Contoh: NBZ9Ro6UKV8"
           - name: duration
             label: "⏳ Estimasi Durasi (Menit)"
             type: number
@@ -108,13 +107,12 @@ content:
           - name: content
             label: "📄 [KHUSUS TEKS] Isi Materi Artikel"
             type: rich-text
-            description: "Tulis materi lengkap di sini jika tipe materi adalah Teks"
 
           # --- BAGIAN KHUSUS KUIS/EVALUASI ---
           - name: minScorePercentage
             label: "💯 [KHUSUS KUIS] Syarat Nilai Kelulusan (%)"
             type: number
-            description: "Batas nilai minimum untuk lulus. Default: 80"
+            description: "Default: 80"
           - name: exercise
             label: "📝 [KHUSUS KUIS] Pengaturan Pertanyaan"
             type: object
@@ -129,39 +127,41 @@ content:
                 list: true
                 fields:
                   - name: id
-                    label: ID Pertanyaan (Otomatis)
-                    type: uuid
+                    label: ID Pertanyaan
+                    type: string # PERBAIKAN: Gunakan 'string'
                   - name: question
                     label: Soal Pertanyaan
                     type: text
-
-                  # PERBAIKAN FATAL: Dibuat string[] murni
+                  
+                  # PERBAIKAN FATAL: Di Pages CMS, array string sederhana menggunakan type: string + list: true
                   - name: options
                     label: Pilihan Jawaban (A, B, C, D)
-                    type: list
+                    type: string
+                    list: true
                     description: "Tambahkan teks pilihan jawaban secara berurutan"
 
                   - name: correctAnswer
                     label: Indeks Jawaban Benar
                     type: number
-                    description: "Mulai dari 0 (0 = Opsi 1, 1 = Opsi 2, dst)"
+                    description: "0 = Opsi 1, 1 = Opsi 2, dst"
                   - name: explanation
                     label: Penjelasan Jawaban (Opsional)
                     type: text
 
-              # Menggunakan code editor bawaan CMS
-              - name: initialCode
-                label: "💻 [Tugas Code] Kode Awal (Starter)"
-                type: code
-              - name: solution
-                label: "💻 [Tugas Code] Kode Solusi"
-                type: code
+          # --- TUGAS CODE ---
+          - name: initialCode
+            label: "💻 [Tugas Code] Kode Awal (Starter)"
+            type: code # Pastikan versi Pages CMS kamu mendukung type 'code', jika masih error ubah ke 'text'
+          - name: solution
+            label: "💻 [Tugas Code] Kode Solusi"
+            type: code
 
-          # --- BAGIAN UMUM (BISA DIGUNAKAN SEMUA TIPE) ---
-          # PERBAIKAN FATAL: Dibuat string[] murni
+          # --- BAGIAN UMUM ---
+          # PERBAIKAN FATAL: Array string menggunakan type: string + list: true
           - name: checklist
             label: "✅ To-Do List (Tugas Praktik)"
-            type: list
+            type: string
+            list: true
             description: "Daftar checklist yang harus dicentang user"
 
           - name: attachments
@@ -178,7 +178,6 @@ content:
               - name: url
                 label: 🔗 Link URL Eksternal
                 type: string
-                description: "Isi URL jika file ada di luar (Google Drive, dll) dan Anda tidak mengunggah file di atas"
               - name: type
                 label: Format File
                 type: select
