@@ -1,22 +1,19 @@
 export type Attachment = {
   title: string;
-  url: string;
+  file?: string;
+  url?: string;
   type?: "pdf" | "zip" | "image" | "code" | "link" | string;
 };
 
 export type Lesson = {
   id: string;
-  slug: string;
-  moduleId: string;
   title: string;
   type?: "video" | "text" | "exercise";
   description?: string;
   video?: string; // YouTube ID, optional
-  content?: string; // Markdown or HTML content, optional
-  checklist?: string[]; // List of task strings
-  attachments?: Attachment[]; // Downloadable media/files
   duration?: number;
   minWatchPercentage?: number; // Default 90%
+  content?: string; // Markdown or HTML content, optional
   minScorePercentage?: number; // Default 80%
   exercise?: {
     type: "quiz" | "code";
@@ -25,10 +22,13 @@ export type Lesson = {
       question: string;
       options: string[];
       correctAnswer: number;
+      explanation?: string;
     }[];
     initialCode?: string;
     solution?: string;
   };
+  checklist?: string[]; // List of task strings
+  attachments?: Attachment[]; // Downloadable media/files
 };
 
 export type Module = {

@@ -5,7 +5,7 @@ media:
 
 content:
   - name: modules
-    label: 📚 Modules (Materi Kelas)
+    label: Modules
     type: collection
     path: content/modules
     format: json
@@ -15,48 +15,48 @@ content:
       # 1. INFORMASI MODUL UMUM
       # ==========================================
       - name: id
-        label: 🔑 Module ID
+        label: Module ID
         type: uuid
         description: "Format unik, contoh: mod-html"
       - name: slug
-        label: 🔗 Slug URL
+        label: Slug
         type: string
         required: true
         description: "Huruf kecil & strip, contoh: html-dasar"
       - name: title
-        label: 📌 Judul Modul
+        label: Title
         type: string
         required: true
       - name: description
-        label: 📝 Deskripsi Modul
+        label: Description
         type: text
 
       # ==========================================
       # 2. TUGAS AKHIR (SUBMISSION)
       # ==========================================
       - name: submissionUrl
-        label: 🎯 [TUGAS AKHIR] Link Pengumpulan Form
+        label: Submission URL
         type: string
         description: "Kosongkan jika tidak ada tugas akhir."
       - name: submissionDescription
-        label: 🎯 [TUGAS AKHIR] Instruksi Pengerjaan
+        label: Submission Description
         type: rich-text
       - name: submissionAttachments
-        label: 🎯 [TUGAS AKHIR] File Lampiran (Template/Soal)
+        label: Submission Attachments
         type: object
         list: true
         fields:
           - name: title
-            label: Nama File
+            label: Title
             type: string
           - name: file
-            label: 📤 Upload File Baru
+            label: File
             type: file
           - name: url
-            label: 🔗 Link URL Eksternal
+            label: URL
             type: string
           - name: type
-            label: Format File
+            label: Type
             type: select
             options: 
               values: [pdf, zip, image, code, link]
@@ -65,109 +65,117 @@ content:
       # 3. DAFTAR PELAJARAN (LESSONS)
       # ==========================================
       - name: lessons
-        label: 📖 Daftar Pelajaran (Lessons)
+        label: Lessons
         type: object
         list: true
         fields:
           - name: id
-            label: 🔑 Lesson ID
+            label: Lesson ID
             type: uuid
             description: "Contoh: html-1"
           - name: title
-            label: 📌 Judul Pelajaran
+            label: Title
             type: string
             required: true
           - name: type
-            label: 🔀 TIPE MATERI
+            label: Type
             type: select
             required: true
             options:
-              values: # <-- WAJIB DITAMBAHKAN
-                - name: "video" # <-- Ganti 'value' menjadi 'name'
-                  label: "▶️ Video Pembelajaran"
+              values:
+                - name: "video"
+                  label: "Video"
                 - name: "text"
-                  label: "📄 Teks / Artikel"
+                  label: "Text"
                 - name: "exercise"
-                  label: "📝 Evaluasi / Kuis"
+                  label: "Exercise"
           - name: description
-            label: 📝 Deskripsi Singkat Materi
+            label: Description
             type: text
 
           - name: video
-            label: "▶️ [KHUSUS VIDEO] YouTube ID"
+            label: Video ID (YouTube)
             type: string
           - name: duration
-            label: "⏳ Estimasi Durasi (Menit)"
+            label: Duration (Mins)
             type: number
           - name: minWatchPercentage
-            label: "📈 Syarat Tontonan Lulus (%)"
+            label: Min. Watch (%)
             type: number
 
           - name: content
-            label: "📄 [KHUSUS TEKS] Isi Materi Artikel"
+            label: Content
             type: rich-text
 
           - name: minScorePercentage
-            label: "💯 [KHUSUS KUIS] Syarat Nilai Kelulusan (%)"
+            label: Min. Score (%)
             type: number
           - name: exercise
-            label: "📝 [KHUSUS KUIS] Pengaturan Pertanyaan"
+            label: Exercise Config
             type: object
             fields:
               - name: type
-                label: Format Evaluasi
+                label: Type
                 type: select
                 options: 
                   values: [quiz, code]
               - name: questions
-                label: Daftar Pertanyaan Kuis
+                label: Questions
                 type: object
                 list: true
                 fields:
                   - name: id
-                    label: ID Pertanyaan
+                    label: ID
                     type: uuid
                   - name: question
-                    label: Soal Pertanyaan
+                    label: Question
                     type: text
                   
                   # KUNCI PERBAIKAN: Di Pages CMS tidak ada 'type: list'. 
                   # Gunakan type: string dengan tambahan list: true
                   - name: options
-                    label: Pilihan Jawaban (A, B, C, D)
+                    label: Options
                     type: string
                     list: true
                     description: "Tekan enter untuk menambah pilihan jawaban"
                     
                   - name: correctAnswer
-                    label: Indeks Jawaban Benar (0, 1, 2, dst)
+                    label: Correct Answer Index
                     type: number
                   - name: explanation
-                    label: Penjelasan Jawaban (Opsional)
+                    label: Explanation
                     type: text
+
+              # Menggunakan code editor bawaan CMS
+              - name: initialCode
+                label: Initial Code
+                type: code 
+              - name: solution
+                label: Solution Code
+                type: code
 
           # KUNCI PERBAIKAN SAMA: Gunakan type: string dan list: true
           - name: checklist
-            label: "✅ To-Do List (Tugas Praktik)"
+            label: Checklist
             type: string
             list: true
 
           - name: attachments
-            label: 📎 File Lampiran Materi Tambahan
+            label: Attachments
             type: object
             list: true
             fields:
               - name: title
-                label: Nama File
+                label: Title
                 type: string
               - name: file
-                label: 📤 Upload File Baru
+                label: File
                 type: file
               - name: url
-                label: 🔗 Link URL Eksternal
+                label: URL
                 type: string
               - name: type
-                label: Format File
+                label: Type
                 type: select
                 options: 
                   values: [pdf, zip, image, code, link]
