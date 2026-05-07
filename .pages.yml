@@ -11,9 +11,8 @@ content:
       # ==========================================
       - name: id
         label: 🔑 Module ID
-        type: string
-        required: true
-        description: "Format unik, contoh: mod-html"
+        type: uuid
+        description: "Format unik, contoh: mod-html (Dikosongkan akan terisi otomatis)"
       - name: slug
         label: 🔗 Slug URL
         type: string
@@ -45,13 +44,17 @@ content:
           - name: title
             label: Nama File
             type: string
+          - name: file
+            label: 📤 Upload File Baru
+            type: file
           - name: url
-            label: Link URL File
+            label: 🔗 Link URL Eksternal
             type: string
+            description: "Isi URL jika file ada di luar (Google Drive, dll) dan Anda tidak mengunggah file di atas"
           - name: type
             label: Format File
             type: select
-            options: [pdf, zip, image, code, link]
+            options: [ pdf, zip, image, code, link ]
 
       # ==========================================
       # 3. DAFTAR PELAJARAN (LESSONS)
@@ -63,9 +66,8 @@ content:
         fields:
           - name: id
             label: 🔑 Lesson ID
-            type: string
-            required: true
-            description: "Contoh: html-1"
+            type: uuid
+            description: "Contoh: html-1 (Dikosongkan akan terisi otomatis)"
           - name: slug
             label: 🔗 Slug Lesson
             type: string
@@ -78,7 +80,7 @@ content:
             label: 🔀 TIPE MATERI (PENTING)
             type: select
             required: true
-            options: 
+            options:
               - label: "▶️ Video Pembelajaran"
                 value: "video"
               - label: "📄 Teks / Artikel"
@@ -120,7 +122,7 @@ content:
               - name: type
                 label: Format Evaluasi
                 type: select
-                options: [quiz, code]
+                options: [ quiz, code ]
               - name: questions
                 label: Daftar Pertanyaan Kuis
                 type: object
@@ -128,17 +130,17 @@ content:
                 fields:
                   - name: id
                     label: ID Pertanyaan (Otomatis)
-                    type: string
+                    type: uuid
                   - name: question
                     label: Soal Pertanyaan
                     type: text
-                  
+
                   # PERBAIKAN FATAL: Dibuat string[] murni
                   - name: options
                     label: Pilihan Jawaban (A, B, C, D)
                     type: list
                     description: "Tambahkan teks pilihan jawaban secara berurutan"
-                  
+
                   - name: correctAnswer
                     label: Indeks Jawaban Benar
                     type: number
@@ -150,7 +152,7 @@ content:
               # Menggunakan code editor bawaan CMS
               - name: initialCode
                 label: "💻 [Tugas Code] Kode Awal (Starter)"
-                type: code 
+                type: code
               - name: solution
                 label: "💻 [Tugas Code] Kode Solusi"
                 type: code
@@ -170,10 +172,14 @@ content:
               - name: title
                 label: Nama File
                 type: string
+              - name: file
+                label: 📤 Upload File Baru
+                type: file
               - name: url
-                label: Link File
+                label: 🔗 Link URL Eksternal
                 type: string
+                description: "Isi URL jika file ada di luar (Google Drive, dll) dan Anda tidak mengunggah file di atas"
               - name: type
                 label: Format File
                 type: select
-                options: [pdf, zip, image, code, link]
+                options: [ pdf, zip, image, code, link ]
