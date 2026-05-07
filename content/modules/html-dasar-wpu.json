@@ -10,11 +10,13 @@
       "id": "6e2b3471-706d-4950-896a-012345678901",
       "title": "Apa itu Web Development?",
       "type": "text",
-      "description": "Fondasi sebelum memulai baris kode pertama Anda.",
-      "content": "Selamat datang di Modul **🚀 HTML Dasar Untuk Pemula - WPU\"**.\n\nModul ini adalah sebuah kurikulum belajar mandiri yang disusun secara sistematis untuk membantu Anda menguasai fondasi utama pengembangan web. Kami mengadaptasi materi pembelajaran dari seri video legendaris milik **Sandhika Galih (Web Programming UNPAS)** dan merestrukturnya ke dalam format yang lebih interaktif.\n\nDalam modul ini, kami memecah 13 materi video asli menjadi lebih dari 20 sesi pembelajaran yang komprehensif. Setiap sesi dirancang untuk memastikan Anda tidak hanya menonton, tetapi juga memahami dan mempraktikkan ilmu tersebut melalui:\n\n- **Sesi Teori Terfokus:** Video penjelasan materi inti.\n- **Kuis Pemahaman:** Soal-soal latihan di setiap transisi materi untuk menguji daya serap Anda.\n- **Tantangan Praktik:** Instruksi tugas mandiri untuk melatih otot koding Anda secara langsung.\n- **Final Submission:** Proyek akhir berupa pembangunan website portofolio statis yang mencakup seluruh aspek HTML5.\n\n**PRC Academy** bertindak sebagai penyusun alur kognitif dan penyedia platform interaktif ini, dengan tetap menjaga integritas materi asli dari sumber utamanya. Modul ini sangat cocok bagi pemula yang menginginkan panduan belajar yang lebih terukur dan disiplin dalam menapaki karier sebagai Web Developer.",
+      "description": "Memahami apa yang sebenarnya terjadi di balik layar sebuah website.",
+      "content": "Web Development adalah proses membangun dan memelihara situs web agar dapat diakses melalui internet. Secara garis besar, dunia ini terbagi menjadi dua bagian utama:\n\n1. **Frontend (Sisi Klien):** Segala sesuatu yang Anda lihat dan interaksikan langsung di browser (teks, warna, tombol, dan menu). Di sinilah **HTML** berperan sebagai tulang punggungnya.\n2. **Backend (Sisi Server):** Mesin di balik layar yang mengelola data, database, dan logika aplikasi.\n\nDalam modul ini, kita akan fokus menjadi seorang **Frontend Developer** pemula dengan menguasai HTML (HyperText Markup Language). HTML bukanlah bahasa pemrograman, melainkan bahasa *markup* yang digunakan untuk memberi tahu browser bagaimana struktur konten harus ditampilkan.",
       "checklist": [
-        "Siapkan mental untuk belajar coding",
-        "Pahami peran HTML di web"
+        "Memahami perbedaan antara Frontend dan Backend.",
+        "Mengenal peran HTML sebagai struktur utama halaman web.",
+        "Menyiapkan browser modern (Google Chrome/Edge) untuk proses belajar.",
+        "Menyiapkan mental untuk belajar secara konsisten dan sabar dalam menghadapi error."
       ]
     },
     {
