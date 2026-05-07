@@ -3,6 +3,7 @@ content:
     label: Modules
     type: collection
     path: content/modules
+    format: json
     filename: "{fields.slug}.json"
     fields:
       - name: id
@@ -47,6 +48,7 @@ content:
     label: Lessons
     type: collection
     path: content/lessons
+    format: json
     filename: "{fields.slug}.json"
     fields:
       - name: id
