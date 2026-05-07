@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T15:17:57.780Z",
+  "generatedAt": "2026-05-07T15:29:00.256Z",
   "total": 2,
   "modules": [
     {
@@ -15,7 +15,7 @@
       "id": "2738d2f5-4f7a-4c8a-9d62-8279b5a2ede2",
       "slug": "python-dasar-halotech",
       "title": "🐍 Belajar Python Bahasa Indonesia - HaloTech",
-      "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: HaloTech Academy",
+      "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nSumber Materi: HaloTech Academy",
       "lessonCount": 19,
       "image": null,
       "path": "content/modules/python-dasar-halotech.json"
