@@ -2,5 +2,25 @@
   "id": "a7aad1d5-c185-4c8a-a618-3279b5a2ede2",
   "slug": "html-dasar-wpu",
   "title": "HTML Dasar Untuk Pemula - WPU",
-  "description": "Seri mengenai bagaimana membuat website menggunakan HTML. Mencakup pembahasan mengenai sejarah HTML, membuat halaman web sederhana, dan penjelasan mengenai tag-tag yang ada pada HTML.\n\noleh Sandhika Galih\n\nProgram Studi Teknik Informatika Universitas Pasundan Bandung.\n\nSumber : https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F"
+  "description": "Seri mengenai bagaimana membuat website menggunakan HTML. Mencakup pembahasan mengenai sejarah HTML, membuat halaman web sederhana, dan penjelasan mengenai tag-tag yang ada pada HTML.\n\noleh Sandhika Galih\n\nProgram Studi Teknik Informatika Universitas Pasundan Bandung.\n\nSumber : https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F",
+  "lessons": [
+    {
+      "id": "b02ca4aa-1398-4887-aa92-6f26c3cd8519",
+      "title": "Apa itu Web Development?",
+      "type": "text",
+      "description": "Baca ini sebelum memulai coding.",
+      "content": "Web development adalah proses membangun dan memelihara situs web. Ini melibatkan segala hal mulai dari desain visual hingga logika di balik layar.\n\nDalam modul ini, kita akan fokus pada **Frontend Development** menggunakan HTML. HTML (HyperText Markup Language) adalah bahasa standar untuk membuat halaman web.\n\n",
+      "checklist": [
+        "Siapkan mental untuk belajar coding"
+      ]
+    },
+    {
+      "id": "9be28e0e-dbf1-4e67-8433-3f7fc16957ba",
+      "title": "Pendahuluan HTML (1/13)",
+      "type": "video",
+      "description": "Pengenalan tentang apa itu HTML, sejarahnya, dan mengapa kita perlu mempelajarinya.",
+      "video": "NBZ9Ro6UKV8",
+      "minWatchPercentage": 74
+    }
+  ]
 }
