@@ -1,0 +1,396 @@
+{
+  "id": "f4b3c2d1-e5f6-4a5b-8c9d-112233445566",
+  "slug": "git-github-dasar-wpu",
+  "title": "🐙 Git & GitHub Dasar - WPU",
+  "description": "Kuasai sistem pengontrol versi (Version Control System) menggunakan Git dan GitHub. Kurikulum ini diadaptasi dari materi Sandhika Galih (WPU) untuk membimbing Anda dari konsep dasar hingga kolaborasi tim dan deployment.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: Web Programming UNPAS",
+  "submissionUrl": "https://forms.gle/69HanMESLvMFbrxP7",
+  "submissionDescription": "Tugas Akhir: Portofolio Online\n\nUpload proyek website HTML yang Anda buat sebelumnya ke GitHub, buat branch baru bernama 'dev', lakukan perubahan kecil, merge ke main, dan aktifkan GitHub Pages agar bisa diakses publik.\n\nTeknis Pengumpulan:\n- Format file: kompres semua file (HTML dan aset) ke .zip atau berikan link GitHub repository publik.\n\nChecklist:\n- Buat Repository Public di GitHub\n- Push kode dari lokal\n- Gunakan .gitignore\n- Aktifkan GitHub Pages",
+  "lessons": [
+    {
+      "id": "c893c717-9402-4362-807e-1e0ca420002d",
+      "title": "Mengapa Developer Harus Pakai Git?",
+      "type": "text",
+      "description": "Pahami konsep Version Control System (VCS) sebelum masuk ke teknis.",
+      "content": "### Apa itu Git?\nGit adalah sistem pengontrol versi terdistribusi yang digunakan untuk mencatat perubahan pada kumpulan berkas (biasanya kode sumber). \n\n**Manfaat Utama:**\n1. **Time Travel:** Anda bisa kembali ke versi kode di masa lalu jika terjadi error.\n2. **Collaboration:** Memungkinkan banyak orang mengerjakan file yang sama tanpa saling menimpa.\n3. **Backup:** Kode Anda tersimpan aman di cloud (GitHub).",
+      "checklist": [
+        "Memahami konsep snapshot",
+        "Mengetahui perbedaan Git dan GitHub"
+      ]
+    },
+    {
+      "id": "c06c5406-8447-40f4-98e5-ea197a310029",
+      "title": "Apa itu Git & GitHub? (1/14)",
+      "type": "video",
+      "video": "lTMZxWMjXQU",
+      "description": "Pengenalan dasar dan filosofi Git.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "f06c8e7a-d8bd-402f-813d-65076439b4f7",
+      "title": "Kuis 1: Konsep Dasar VCS",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "61a610ed-9fcf-4a0e-9420-102e4a52c5c3",
+            "question": "Berdasarkan video, apa analogi yang digunakan untuk menjelaskan hubungan Git dan GitHub?",
+            "options": [
+              "Git adalah internet, GitHub adalah komputer",
+              "Git adalah software-nya, GitHub adalah tempat penyimpanannya (seperti media sosial untuk kode)",
+              "Git adalah folder, GitHub adalah file",
+              "Keduanya tidak memiliki hubungan"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "0f98fe95-40d4-4e76-8ef3-20785a9a37f8",
+            "question": "Apa fungsi utama dari Version Control System (VCS) seperti Git menurut video?",
+            "options": [
+              "Untuk membuat desain website",
+              "Untuk mempercepat koneksi internet",
+              "Mengelola perubahan dokumen/code dan mencatat riwayatnya",
+              "Menghapus file secara otomatis"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "d8cf4d1d-2174-4426-ad5b-51bf093854a3",
+            "question": "Dalam video, apa sebutan untuk 'snapshot' atau rekaman setiap perubahan yang kita simpan di Git?",
+            "options": [
+              "Branch",
+              "Merge",
+              "Commit",
+              "Push"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "aef6ea20-b729-4cf2-96ba-c057b3e51c7c",
+            "question": "Apa yang dimaksud dengan 'Merge' dalam konsep Git yang dijelaskan?",
+            "options": [
+              "Proses menghapus repositori",
+              "Proses penggabungan dua branch (cabang) pengerjaan",
+              "Proses menyalin kode milik orang lain",
+              "Proses pendaftaran akun GitHub"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+      "title": "Instalasi & Konfigurasi Git (Materi Tambahan)",
+      "type": "text",
+      "description": "Langkah pertama di terminal Anda.",
+      "content": "Sebelum lanjut, pastikan Git terinstal dengan mengetik `git --version` di terminal. Jangan lupa setting username dan email Anda menggunakan `git config`.",
+      "checklist": [
+        "Install Git",
+        "Set user.name",
+        "Set user.email"
+      ]
+    },
+    {
+      "id": "e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
+      "title": "Bekerja dengan Git secara Lokal (5/14)",
+      "type": "video",
+      "video": "e-6OkXRqWaE",
+      "description": "Praktik git init, add, dan commit.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "f3a4b5c6-d7e8-4f9a-b0c1-d2e3f4a5b6c7",
+      "title": "Tantangan: Snapshot Pertama",
+      "type": "text",
+      "description": "Mempraktikkan alur kerja lokal.",
+      "content": "Buatlah folder baru, inisialisasi git, buat file `belajar.txt`, tambahkan ke staging area, dan lakukan commit pertama Anda.",
+      "checklist": [
+        "Jalankan git init",
+        "Jalankan git add .",
+        "Jalankan git commit -m 'initial commit'"
+      ]
+    },
+    {
+      "id": "7f1269d8-5647-4b39-8d18-70f1a23ed2ac",
+      "title": "Bekerja dengan GitHub (2/14)",
+      "type": "video",
+      "video": "Q3Id0DgcrXY",
+      "description": "Menghubungkan repository lokal ke GitHub.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "b8052383-9021-477b-908e-7f9bfacb2bd8",
+      "title": "Konsep Branching (3/14)",
+      "type": "video",
+      "video": "k1QXd-8VbPY",
+      "description": "Memahami mengapa kita butuh cabang dalam koding.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "e9efc448-2482-4e76-a438-d09a2ce0109d",
+      "title": "Git Branch & Merge (6/14)",
+      "type": "video",
+      "video": "EGl7KxVOyNs",
+      "description": "Cara membuat cabang dan menggabungkannya kembali.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "56851a1d-06a4-43b6-bf33-be6c84e93a3b",
+      "title": "Menangani Merge Conflict (7/14)",
+      "type": "video",
+      "video": "Vfwfeve72PA",
+      "description": "Tips saat dua branch mengubah baris kode yang sama.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "02202773-cd39-42a2-abc3-90e02e7a79fc",
+      "title": "Kuis 2: Branch & Merge",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "0f0e1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+            "question": "Setelah menginstal Git, perintah apa yang pertama kali harus dijalankan untuk mengatur identitas pengenal pada setiap commit?",
+            "options": [
+              "git --version",
+              "git config --global user.name 'Nama Anda'",
+              "git init",
+              "git add ."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+            "question": "Apa fungsi dari perintah 'git add .' pada alur kerja Git lokal?",
+            "options": [
+              "Menghapus file dari folder",
+              "Menyimpan perubahan secara permanen ke database",
+              "Memindahkan perubahan dari working directory ke staging area",
+              "Membuat repositori baru"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+            "question": "Perintah yang digunakan untuk mengirimkan commit dari repositori lokal ke repositori remote di GitHub adalah...",
+            "options": [
+              "git pull",
+              "git push",
+              "git fetch",
+              "git clone"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+            "question": "Jika Anda sedang berada di branch 'feature' dan ingin menggabungkannya ke branch 'main', langkah pertama yang harus dilakukan adalah...",
+            "options": [
+              "Menjalankan git merge main saat masih di branch feature",
+              "Pindah ke branch main menggunakan git checkout main",
+              "Menghapus branch feature terlebih dahulu",
+              "Melakukan git push ke GitHub"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+            "question": "Apa yang harus dilakukan setelah Anda memperbaiki kode yang menyebabkan 'Merge Conflict'?",
+            "options": [
+              "Langsung mematikan terminal",
+              "Menghapus folder .git",
+              "Melakukan git add pada file yang konflik, lalu jalankan git commit",
+              "Mengulang instalasi Git"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "a22d97c5-9930-4e0a-80af-78c4ccb234aa",
+      "title": "Git Fork: Berkontribusi ke Project Orang Lain (4/14)",
+      "type": "video",
+      "video": "8rry2ncZmfg",
+      "description": "Cara mengambil copy repository orang lain ke akun kita.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "d2898911-1b93-4fef-8e1f-50556b49bdf5",
+      "title": "Git Remote (8/14)",
+      "type": "video",
+      "video": "ppi_M-FX1CY",
+      "description": "Mengelola koneksi repository remote.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "bd1578ba-7d5c-49ad-aad2-4a0cf66f9c06",
+      "title": "Multiple Remotes (10/14)",
+      "type": "video",
+      "video": "XeOf2wdnFlc",
+      "description": "Bekerja dengan lebih dari satu sumber remote (Upstream vs Origin).",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "099fb8ea-299d-424b-ad14-f13398a5d0af",
+      "title": "Remote Branch (11/14)",
+      "type": "video",
+      "video": "4OLGYv3uVV4",
+      "description": "Memahami branch yang ada di server GitHub.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "6556668d-3d8d-4a9d-aaf1-656ae8c1f431",
+      "title": "GitHub Pages: Hosting Gratis (9/14)",
+      "type": "video",
+      "video": "rgDDWhQe-ow",
+      "description": "Cara mengonlinekan website statis Anda secara gratis.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "b6b09aec-fe8a-4467-bec7-3fd1919ea7c6",
+      "title": "Gitignore: Mengabaikan File (12/14)",
+      "type": "video",
+      "video": "LK3kX4n-vLM",
+      "description": "Cara agar file rahasia atau node_modules tidak ter-upload ke GitHub.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "0454dc3d-9c06-4b13-a5e3-367254055f4d",
+      "title": "Git Rebase (13/14)",
+      "type": "video",
+      "video": "4kJrcuIvbOo",
+      "description": "Alternatif merge untuk merapikan history commit.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "46891b7a-ac07-4c00-baa8-19e882ec7717",
+      "title": "Git & Web Hosting (14/14)",
+      "type": "video",
+      "video": "N7vbVc3oQqI",
+      "description": "Alur kerja deployment website menggunakan Git.",
+      "minWatchPercentage": 90
+    },
+    {
+      "id": "636b0723-473e-433c-8515-bb4e1c387645",
+      "title": "Final Quiz: Git Master",
+      "type": "exercise",
+      "exercise": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "d7291849-ec5f-4e8c-8d3a-39b4d04782f0",
+            "question": "File apa yang digunakan untuk memberi tahu Git agar tidak melacak atau mengunggah file tertentu seperti node_modules atau .env?",
+            "options": [
+              ".gitconfig",
+              ".gitignore",
+              ".gitkeep",
+              "README.md"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "e1d3f629-7c74-4d2b-80da-6f3b59a8e1c5",
+            "question": "Perintah untuk mengambil perubahan terbaru dari GitHub dan langsung menggabungkannya (merge) ke komputer lokal adalah...",
+            "options": [
+              "git push",
+              "git commit",
+              "git pull",
+              "git status"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "f43b8d92-54a6-49e0-9c2d-7a5f4816b3d1",
+            "question": "Dalam alur kontribusi Open Source, apa perbedaan antara 'origin' dan 'upstream'?",
+            "options": [
+              "Origin adalah repo milik orang lain, Upstream adalah repo lokal",
+              "Origin adalah hasil fork di akun kita, Upstream adalah repo asli milik pembuatnya",
+              "Keduanya adalah istilah yang sama",
+              "Upstream hanya digunakan untuk hosting"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "0b2f4d6e-1c3a-4f8b-9d0e-5f6a7b8c9d0e",
+            "question": "Apa fungsi utama dari fitur 'Fork' di GitHub?",
+            "options": [
+              "Menghapus repository orang lain",
+              "Membuat salinan repository orang lain ke akun GitHub kita sendiri",
+              "Mengunci repository agar tidak bisa diedit",
+              "Menjalankan kode secara otomatis"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "1c4d6e8f-2b3a-4d5e-9f0c-6a7b8d9e0f1a",
+            "question": "Apa keunggulan utama menggunakan 'Git Rebase' dibandingkan 'Git Merge'?",
+            "options": [
+              "Rebase lebih cepat",
+              "Rebase menghasilkan riwayat commit yang lebih rapi dan linear (satu garis lurus)",
+              "Rebase tidak memerlukan internet",
+              "Merge hanya bisa digunakan di GitHub Pages"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": "2d5e7f9a-3c4b-4e6f-8d0a-7b8c9e0f1a2b",
+            "question": "Layanan dari GitHub yang memungkinkan kita untuk melakukan hosting website statis secara gratis adalah...",
+            "options": [
+              "GitHub Actions",
+              "GitHub Desktop",
+              "GitHub Pages",
+              "GitHub Wiki"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": "3e6f8a0b-4d5c-4f7e-9a0b-8c9d1e2f3a4b",
+            "question": "Perintah apa yang digunakan untuk melihat daftar 'remote' yang terhubung dengan repositori lokal Anda?",
+            "options": [
+              "git remote -v",
+              "git show remote",
+              "git config --list",
+              "git status"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": "4f7e9a1b-5c6d-4f8a-9b0c-1d2e3f4a5b6c",
+            "question": "Jika Anda ingin melihat riwayat commit dalam bentuk grafik satu baris di terminal, perintah yang tepat adalah...",
+            "options": [
+              "git log --oneline --graph",
+              "git history --show",
+              "git commit --list",
+              "git checkout --log"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": "5a8b0c1d-6e7f-4a9b-8c0d-1e2f3a4b5c6d",
+            "question": "Apa yang dilakukan oleh perintah 'git fetch'?",
+            "options": [
+              "Mengunduh data dari remote tanpa langsung menggabungkannya ke branch lokal",
+              "Mengunggah file ke server",
+              "Menghapus branch lokal",
+              "Membuat file baru"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": "6b9c0d1e-7f8a-4b9c-8d0e-1f2a3b4c5d6e",
+            "question": "Dalam alur kerja deployment web, apa keuntungan menggunakan Git dibandingkan cara konvensional (seperti upload manual via FTP)?",
+            "options": [
+              "Bisa melakukan rollback ke versi sebelumnya dengan cepat jika ada error",
+              "Ukuran file jadi lebih kecil",
+              "Tidak membutuhkan password server",
+              "Membuat loading website jadi lebih cepat"
+            ],
+            "correctAnswer": 0
+          }
+        ]
+      }
+    }
+  ]
+}
