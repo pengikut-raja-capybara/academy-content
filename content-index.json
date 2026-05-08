@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T06:26:02.588Z",
+  "generatedAt": "2026-05-08T06:27:39.484Z",
   "total": 3,
   "modules": [
     {
@@ -17,7 +17,7 @@
       "title": "🚀 HTML Dasar Untuk Pemula - WPU",
       "description": "Modul ini adalah sebuah kurikulum belajar mandiri yang disusun untuk membantu Anda menguasai fondasi utama pengembangan web. Kami mengadaptasi materi pembelajaran dari seri video legendaris milik Sandhika Galih (Web Programming UNPAS) dan merestrukturnya ke dalam format yang lebih interaktif.",
       "lessonCount": 22,
-      "image": null,
+      "image": "/uploads/a827b940-f428-443e-9677-10cac2030ce9.jpg",
       "path": "content/modules/html-dasar-wpu.json"
     },
     {
