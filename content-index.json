@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T05:49:31.091Z",
+  "generatedAt": "2026-05-08T06:24:46.127Z",
   "total": 3,
   "modules": [
     {
@@ -26,7 +26,7 @@
       "title": "🐍 Belajar Python Bahasa Indonesia - HaloTech",
       "description": "Kurikulum belajar mandiri yang disusun oleh PRC Academy berdasarkan seri kursus HaloTech Academy. Modul ini dirancang untuk membimbing Anda belajar Python dari nol hingga mahir dengan alur yang sistematis, kuis interaktif, dan tantangan praktik langsung.\n\nSumber Materi: HaloTech Academy",
       "lessonCount": 19,
-      "image": null,
+      "image": "/uploads/4bdb4c89-2efe-49e7-841e-643716532f4b.jpg",
       "path": "content/modules/python-dasar-halotech.json"
     }
   ]
