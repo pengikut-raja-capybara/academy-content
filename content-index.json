@@ -1,7 +1,16 @@
 {
-  "generatedAt": "2026-05-07T15:29:00.256Z",
-  "total": 2,
+  "generatedAt": "2026-05-08T05:49:31.091Z",
+  "total": 3,
   "modules": [
+    {
+      "id": "f4b3c2d1-e5f6-4a5b-8c9d-112233445566",
+      "slug": "git-github-dasar-wpu",
+      "title": "🐙 Git & GitHub Dasar - WPU",
+      "description": "Kuasai sistem pengontrol versi (Version Control System) menggunakan Git dan GitHub. Kurikulum ini diadaptasi dari materi Sandhika Galih (WPU) untuk membimbing Anda dari konsep dasar hingga kolaborasi tim dan deployment.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: Web Programming UNPAS",
+      "lessonCount": 20,
+      "image": null,
+      "path": "content/modules/git-github-dasar-wpu.json"
+    },
     {
       "id": "a7aad1d5-c185-4c8a-a618-3279b5a2ede2",
       "slug": "html-dasar-wpu",
