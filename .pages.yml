@@ -30,6 +30,9 @@ content:
       - name: description
         label: Description
         type: text
+      - name: image
+        label: Image / Foto
+        type: file
 
       # ==========================================
       # 2. TUGAS AKHIR (SUBMISSION)
