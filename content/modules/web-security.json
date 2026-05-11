@@ -1,0 +1,268 @@
+{
+    "id": "e9f8a7b6-c5d4-4e3f-b2a1-1234567890ab",
+    "slug": "seri-keamanan-web",
+    "title": "🛡️ Seri Keamanan Web: Vulnerability Analysis",
+    "description": "Kuasai seni menganalisis celah keamanan aplikasi web dari sisi klien hingga server. Modul ini membongkar anatomi serangan populer seperti XSS, SQL Injection, dan SSRF, serta memberikan cetak biru pertahanan berdasarkan standar industri OWASP Top 10.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: Raja Capybara (Official)",
+    "lessons": [
+        {
+            "id": "9f1d4b6e-821a-4c22-b13c-6f8d092e11a1",
+            "title": "Peta Jalan Keamanan Web (Fundamental)",
+            "type": "text",
+            "description": "Memahami ekosistem web sebagai medan tempur digital.",
+            "content": "### Fondasi Sebelum Peretasan Etis\nMemahami arsitektur web adalah kewajiban sebelum melakukan operasi keamanan. Web bukan sekadar halaman statis, melainkan ekosistem kompleks yang melibatkan protokol, server, dan database.\n\n**Konsep Utama Keamanan:**\n1. **CIA Triad:**\n   - **Confidentiality:** Data hanya bisa diakses oleh pihak yang berwenang.\n   - **Integrity:** Menjamin data tidak dimanipulasi selama transmisi atau penyimpanan.\n   - **Availability:** Sistem harus selalu siap melayani pengguna yang sah.\n2. **Stateless Nature:** HTTP secara bawaan tidak memiliki ingatan. Itulah sebabnya kita menggunakan **Cookie** dan **Session** sebagai 'Badge Identitas', yang sayangnya sering menjadi target utama pencurian identitas oleh peretas.\n\n**Mandat Etis:** Pemahaman arsitektur memberi Anda kekuatan besar. Gunakan ilmu ini hanya untuk pertahanan dan eksploitasi pada sistem yang Anda miliki izin resminya.",
+            "checklist": [
+                "Memahami prinsip CIA Triad",
+                "Mengetahui cara kerja Cookie/Session",
+                "Menyetujui kode etik security researcher"
+            ]
+        },
+        {
+            "id": "a2b1c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6",
+            "title": "Arsitektur Web & Fondasi Keamanan",
+            "type": "video",
+            "video": "eFj2DQOcA64",
+            "description": "Membedah bagaimana komponen web (Client, Server, DB) berinteraksi dan di mana celah keamanan biasanya muncul.",
+            "minWatchPercentage": 90
+        },
+        {
+            "id": "b2a1c4d3-e6f5-48a7-b8c1-d2e3f4a5b6c7",
+            "title": "Dalang Tak Terlihat: XSS & CSRF",
+            "type": "video",
+            "video": "MbQmiZGvxUU",
+            "description": "Mempelajari Cross-Site Scripting dan Cross-Site Request Forgery yang mengeksploitasi browser pengguna.",
+            "minWatchPercentage": 90
+        },
+        {
+            "id": "78a23c4d-9e1b-4f5a-8d62-123456789abc",
+            "title": "Bedah Kasus: Serangan Sisi Klien",
+            "type": "text",
+            "description": "Mengurai paradoks kepercayaan pada browser.",
+            "content": "### XSS vs CSRF: Beda Sasaran, Beda Metode\nKeduanya menyerang browser, namun dengan cara yang sangat berbeda:\n\n**1. XSS (Cross-Site Scripting):**\nPeretas menyuntikkan skrip (biasanya JavaScript) ke dalam halaman web. Browser pengguna yang 'percaya' pada server akan mengeksekusi skrip tersebut. Akibatnya, peretas bisa mencuri Cookie atau melakukan pembajakan sesi.\n\n**2. CSRF (Cross-Site Request Forgery):**\nSerangan ini tidak menyuntikkan kode, melainkan 'memalsukan' permintaan. Peretas memanfaatkan sesi pengguna yang sedang aktif di browser untuk mengirimkan perintah sah (seperti ganti password) ke server target tanpa disadari oleh korban.\n\n**Mitigasi Utama:**\n- Gunakan **Context-aware Output Encoding** untuk mencegah XSS.\n- Gunakan **Anti-CSRF Tokens** pada setiap permintaan yang mengubah data.",
+            "checklist": [
+                "Memahami perbedaan payload XSS dan CSRF",
+                "Mengetahui fungsi Anti-CSRF Token"
+            ]
+        },
+        {
+            "id": "c3b2d4e5-f7a6-49b8-c9d0-e1f2a3b4c5d6",
+            "title": "Kuis 1: Kerentanan Browser",
+            "type": "exercise",
+            "exercise": {
+                "type": "quiz",
+                "questions": [
+                    {
+                        "id": "d4c3e5f6-a7b8-4ac9-d0e1-f2a3b4c5d6e7",
+                        "question": "Jenis XSS yang payload-nya tersimpan di database disebut...",
+                        "options": [
+                            "Reflected XSS",
+                            "Stored XSS",
+                            "DOM-based XSS",
+                            "Blind XSS"
+                        ],
+                        "correctAnswer": 1
+                    },
+                    {
+                        "id": "e5d4f6a7-b8c9-4bd0-e1f2-a3b4c5d6e7f8",
+                        "question": "Manakah yang merupakan mekanisme pertahanan utama terhadap CSRF?",
+                        "options": [
+                            "Antivirus",
+                            "Input Validation",
+                            "Anti-CSRF Token",
+                            "HTTPS"
+                        ],
+                        "correctAnswer": 2
+                    },
+                    {
+                        "id": "78a2d3f1-b4c5-4e6g-8h9i-123456789abc",
+                        "question": "Apa tujuan utama penyerang dalam melakukan serangan XSS?",
+                        "options": [
+                            "Merusak server database secara fisik",
+                            "Mengeksekusi skrip berbahaya di browser korban untuk mencuri cookie atau sesi",
+                            "Menghentikan layanan web agar tidak bisa diakses (DDoS)",
+                            "Mengubah IP Address server target"
+                        ],
+                        "correctAnswer": 1
+                    },
+                    {
+                        "id": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e",
+                        "question": "Mengapa CSRF sering disebut sebagai serangan 'One-Click'?",
+                        "options": [
+                            "Karena hanya butuh satu baris kode untuk meretas server",
+                            "Karena penyerang hanya perlu mengklik tombol submit satu kali",
+                            "Karena korban hanya perlu mengklik satu link berbahaya saat sesinya masih aktif",
+                            "Karena serangan ini hanya bisa dilakukan pada browser versi lama"
+                        ],
+                        "correctAnswer": 2
+                    },
+                    {
+                        "id": "f5e4d3c2-b1a0-4c9d-8e7f-6g5h4i3j2k1l",
+                        "question": "Payload `<script>alert('XSS')</script>` yang muncul saat dimasukkan ke kolom pencarian adalah contoh dari...",
+                        "options": [
+                            "Reflected XSS",
+                            "Stored XSS",
+                            "Blind SQLi",
+                            "Path Traversal"
+                        ],
+                        "correctAnswer": 0
+                    },
+                    {
+                        "id": "a9b8c7d6-e5f4-4321-abcd-0987654321fe",
+                        "question": "Paradoks kepercayaan pada CSRF terjadi karena...",
+                        "options": [
+                            "Browser tidak percaya pada user",
+                            "Server terlalu percaya pada cookie yang dikirimkan secara otomatis oleh browser",
+                            "User tidak percaya pada tampilan website",
+                            "Database tidak percaya pada kueri dari server"
+                        ],
+                        "correctAnswer": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": "f6e5a7b8-c9d0-4ce1-f2a3-b4c5d6e7f8a9",
+            "title": "Anatomi SQL Injection",
+            "type": "video",
+            "video": "7sHzzLWNiAE",
+            "description": "Mendalami bagaimana input pengguna yang tidak difilter dapat memanipulasi logika kueri database.",
+            "minWatchPercentage": 90
+        },
+        {
+            "id": "f3a7d2e8-c5b1-4112-9d8a-9a0b1c2d3e4f",
+            "title": "Deep Dive: Prepared Statements",
+            "type": "text",
+            "description": "Cara absolut menghentikan serangan SQL Injection.",
+            "content": "### Memisahkan Kode dari Data\nKesalahan fundamental yang menyebabkan SQL Injection adalah mencampurkan **Kode Logika** dengan **Kargo Data**.\n\nPeretas menggunakan karakter khusus (seperti petik tunggal `'`) untuk keluar dari jalur data dan masuk ke jalur instruksi. Payload populer seperti `OR '1'='1'` membuat kueri selalu bernilai benar, sehingga bypass login bisa terjadi.\n\n**Solusi: Prepared Statements**\nDengan Prepared Statements, kita menyusun struktur kueri terlebih dahulu menggunakan *placeholder* (`?`). Data pengguna kemudian dikirimkan secara terpisah. Database akan memperlakukan input tersebut murni sebagai data, bukan perintah, sehingga karakter berbahaya tidak akan pernah dieksekusi sebagai kode.",
+            "checklist": [
+                "Pahami cara kerja tanda tanya (?) di SQL",
+                "Bedakan antara sanitasi input dan parameterization"
+            ]
+        },
+        {
+            "id": "a7f6b8c9-d0e1-4df2-a3b4-c5d6e7f8a9b0",
+            "title": "Keamanan Server & SSRF",
+            "type": "video",
+            "video": "QpFFXAdLc0c",
+            "description": "Bagaimana server bisa dimanipulasi menjadi 'agen penyerang' untuk menjelajahi jaringan internal.",
+            "minWatchPercentage": 90
+        },
+        {
+            "id": "b8a7c9d0-e1f2-45a3-b4c5-d6e7f8a9b0c1",
+            "title": "Mengenal SSRF Pivot Mechanism",
+            "type": "text",
+            "description": "Memahami ancaman infrastruktur internal.",
+            "content": "### SSRF: Manipulasi Kepercayaan Server\nServer-Side Request Forgery (SSRF) terjadi ketika peretas bisa memaksa server aplikasi untuk mengirimkan permintaan HTTP ke arah yang tidak semestinya, biasanya ke arah infrastruktur internal yang tidak dapat diakses dari internet publik.\n\n**Dampak SSRF:**\n- **Cloud Metadata Leakage:** Mengambil akses kunci rahasia (AWS/GCP/Azure) melalui metadata server.\n- **Port Scanning:** Menjelajahi layanan yang berjalan di jaringan internal (seperti database lokal atau panel admin).\n\n**Strategi Pertahanan:**\n- Terapkan **Allowlist Domain** yang ketat.\n- Hindari penggunaan fungsi yang menerima URL mentah dari pengguna.\n- Pastikan server tidak memiliki hak akses ke layanan internal yang tidak perlu.",
+            "checklist": [
+                "Memahami perbedaan SSRF dan CSRF",
+                "Mengetahui bahaya akses localhost bagi server"
+            ]
+        },
+        {
+            "id": "c9b8d0e1-f2a3-46b4-c5d6-e7f8a9b0c1d2",
+            "title": "Anatomi Peretasan Web: OWASP & File Exploitation",
+            "type": "video",
+            "video": "HDVgTvtWRxw",
+            "description": "Mengenal standar OWASP Top 10 dan risiko kritis pada fitur unggah file (Web Shell).",
+            "minWatchPercentage": 90
+        },
+        {
+            "id": "d0c9e1f2-a3b4-47c5-d6e7-f8a9b0c1d2e3",
+            "title": "Ujian Teori: Vulnerability Master",
+            "type": "exercise",
+            "exercise": {
+                "type": "quiz",
+                "questions": [
+                    {
+                        "id": "e1d0f2a3-b4c5-48d6-e7f8-a9b0c1d2e3f4",
+                        "question": "Manakah di bawah ini yang merupakan bagian dari OWASP Top 10?",
+                        "options": [
+                            "Broken Access Control",
+                            "Cryptographic Failures",
+                            "Injection",
+                            "Semua Benar"
+                        ],
+                        "correctAnswer": 3
+                    },
+                    {
+                        "id": "f2e1a3b4-c5d6-49e7-f8a9-b0c1d2e3f4a5",
+                        "question": "Payload 'shell.php' pada fitur upload foto berisiko menyebabkan...",
+                        "options": [
+                            "XSS",
+                            "SSRF",
+                            "RCE (Remote Code Execution)",
+                            "SQLi"
+                        ],
+                        "correctAnswer": 2
+                    },
+                    {
+                        "id": "67b0d712-4c5e-49b2-a1f3-8d623c4d5e6f",
+                        "question": "Apa perbedaan utama antara XSS dan CSRF dalam hal target eksploitasi?",
+                        "options": [
+                            "XSS menyerang server, CSRF menyerang database",
+                            "XSS mengeksploitasi kepercayaan browser terhadap server, CSRF mengeksploitasi kepercayaan server terhadap browser",
+                            "XSS hanya mencuri data, CSRF hanya merusak tampilan",
+                            "XSS membutuhkan user aktif, CSRF tidak membutuhkan user sama sekali"
+                        ],
+                        "correctAnswer": 1
+                    },
+                    {
+                        "id": "b3a1d4e2-7f6g-4a5b-8c9d-123456789001",
+                        "question": "Metode pertahanan manakah yang paling efektif secara absolut untuk mencegah SQL Injection?",
+                        "options": [
+                            "Menggunakan Web Application Firewall (WAF)",
+                            "Menghapus karakter kutip tunggal secara manual",
+                            "Implementasi Prepared Statements (Parameterized Queries)",
+                            "Menggunakan HTTPS pada halaman login"
+                        ],
+                        "correctAnswer": 2
+                    },
+                    {
+                        "id": "c4d2e5f3-8g7h-4b6c-9d0e-234567890112",
+                        "question": "Dalam konteks SSRF, apa yang dimaksud dengan 'Pivot Mechanism'?",
+                        "options": [
+                            "Server digunakan sebagai perantara untuk menyerang infrastruktur internal yang tidak dapat diakses dari luar",
+                            "Data database dipindahkan ke tabel lain agar tidak terbaca",
+                            "User dipindahkan secara paksa ke situs phishing",
+                            "Protokol HTTP diubah menjadi HTTPS secara otomatis"
+                        ],
+                        "correctAnswer": 0
+                    },
+                    {
+                        "id": "d5e3f6g4-9h8i-4c7d-0e1f-345678901223",
+                        "question": "Elemen 'CIA Triad' yang menjaga agar data tidak diubah oleh pihak yang tidak sah selama transmisi adalah...",
+                        "options": [
+                            "Confidentiality",
+                            "Integrity",
+                            "Availability",
+                            "Authenticity"
+                        ],
+                        "correctAnswer": 1
+                    },
+                    {
+                        "id": "e6f4g7h5-0i9j-4d8e-1f2g-456789012334",
+                        "question": "Mengapa penggunaan Cookie dan Session diperlukan dalam arsitektur web?",
+                        "options": [
+                            "Agar website bisa berjalan lebih cepat",
+                            "Karena protokol HTTP bersifat 'Stateless' (tidak memiliki memori bawaan)",
+                            "Untuk mengenkripsi seluruh file HTML",
+                            "Sebagai pengganti database pada sisi server"
+                        ],
+                        "correctAnswer": 1
+                    }
+                ]
+            }
+        },
+        {
+            "id": "12345678-abcd-4321-bcde-ffffffffffff",
+            "title": "Tugas Akhir: Security Audit Report",
+            "type": "text",
+            "description": "Simulasi pelaporan Bug Bounty.",
+            "content": "### Tantangan Final: Menulis Laporan Audit\nSebagai seorang peneliti keamanan, kemampuan teknis harus dibarengi dengan kemampuan dokumentasi.\n\n**Instruksi:**\nPilihlah salah satu jenis kerentanan yang telah dipelajari (XSS, SQLi, atau SSRF). Buatlah sebuah laporan audit sederhana dalam format PDF atau Markdown yang mencakup:\n1. **Title:** Judul temuan celah keamanan.\n2. **Severity:** Tingkat keparahan (Low/Medium/High/Critical).\n3. **Summary:** Penjelasan singkat celah tersebut.\n4. **Steps to Reproduce:** Langkah-langkah detail bagaimana celah tersebut bisa dieksploitasi.\n5. **Impact:** Apa kerugian bagi perusahaan jika celah ini ditemukan oleh penyerang jahat.\n6. **Remediation:** Saran perbaikan kode agar celah tersebut tertutup.",
+            "checklist": [
+                "Laporan minimal 2 halaman",
+                "Sertakan cuplikan kode perbaikan",
+                "Gunakan bahasa yang profesional"
+            ]
+        }
+    ]
+}
