@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T05:59:29.249Z",
+  "generatedAt": "2026-05-11T06:10:13.319Z",
   "total": 4,
   "modules": [
     {
@@ -33,9 +33,9 @@
       "id": "e9f8a7b6-c5d4-4e3f-b2a1-1234567890ab",
       "slug": "web-security",
       "title": "🛡️ Seri Keamanan Web: Vulnerability Analysis",
-      "description": "Kuasai seni menganalisis celah keamanan aplikasi web dari sisi klien hingga server. Modul ini membongkar anatomi serangan populer seperti XSS, SQL Injection, dan SSRF, serta memberikan cetak biru pertahanan berdasarkan standar industri OWASP Top 10.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: Raja Capybara (Official)",
+      "description": "Kuasai seni menganalisis celah keamanan aplikasi web dari sisi klien hingga server. Modul ini membongkar anatomi serangan populer seperti XSS, SQL Injection, dan SSRF, serta memberikan cetak biru pertahanan berdasarkan standar industri OWASP Top 10.",
       "lessonCount": 12,
-      "image": null,
+      "image": "/uploads/e25c3b65-9570-4c5c-a712-17356397015a.jpg",
       "path": "content/modules/web-security.json"
     }
   ]
