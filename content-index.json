@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-10T19:05:48.223Z",
-  "total": 3,
+  "generatedAt": "2026-05-11T05:59:29.249Z",
+  "total": 4,
   "modules": [
     {
       "id": "f4b3c2d1-e5f6-4a5b-8c9d-112233445566",
@@ -28,6 +28,15 @@
       "lessonCount": 19,
       "image": "/uploads/4bdb4c89-2efe-49e7-841e-643716532f4b.jpg",
       "path": "content/modules/python-dasar-halotech.json"
+    },
+    {
+      "id": "e9f8a7b6-c5d4-4e3f-b2a1-1234567890ab",
+      "slug": "web-security",
+      "title": "🛡️ Seri Keamanan Web: Vulnerability Analysis",
+      "description": "Kuasai seni menganalisis celah keamanan aplikasi web dari sisi klien hingga server. Modul ini membongkar anatomi serangan populer seperti XSS, SQL Injection, dan SSRF, serta memberikan cetak biru pertahanan berdasarkan standar industri OWASP Top 10.\n\nPlatform & Kurikulum: Raja Capybara Academy\nSumber Materi: Raja Capybara (Official)",
+      "lessonCount": 12,
+      "image": null,
+      "path": "content/modules/web-security.json"
     }
   ]
 }
